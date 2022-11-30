@@ -10,6 +10,7 @@ namespace EYN_Store
     internal static class Program
     {
         public static Sign_In sign_in;
+        public static User CurrentUser;
         public static DataTable data;
         /// <summary>
         /// The main entry point for the application.
