@@ -63,6 +63,16 @@ namespace EYN_Store.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EYN___Ligth_blue_Logo {
+            get {
+                object obj = ResourceManager.GetObject("EYN - Ligth blue Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EYN___Logo {
             get {
                 object obj = ResourceManager.GetObject("EYN - Logo", resourceCulture);

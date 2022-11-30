@@ -18,14 +18,14 @@ namespace EYN_Store
         private string username;
         private string password;
 
-        public DB_Connection(string YOUR_SERVER_PATH, string YOUR_USERNAME, string YOUR_PASSWORD)
+        public DB_Connection()
         {
-            host = YOUR_SERVER_PATH;
-            username = YOUR_USERNAME;
-            password = YOUR_PASSWORD;
+            host = "199.192.22.113";
+            username = "root";
+            password = "VzSyZj7N7k2w8HB69h";
         }
 
-        public void Connect ()
+        public DataTable SendQueryToDB (string query)
         {
             try
             {
@@ -37,19 +37,17 @@ namespace EYN_Store
                         ForwardedPortLocal portForwarded = new ForwardedPortLocal("127.0.0.1", 7003, host, 7003);
                         client.AddForwardedPort(portForwarded);
                         portForwarded.Start();
+                        DataTable dt = new DataTable();
                         using (MySqlConnection con = new MySqlConnection($"server=127.0.0.1; port=7003; user id=root; password=p9d49cih9KUu6XDEp7JbN245Dhw784qAPvwbna5Z; database=Store;"))
                         {
-                            using (MySqlCommand com = new MySqlCommand("SELECT * FROM Users", con))
+                            using (MySqlCommand com = new MySqlCommand(query, con))
                             {
-                                DataTable dt = new DataTable();
                                 MySqlDataAdapter ad = new MySqlDataAdapter(com);
-
                                 ad.Fill(dt);
-                                Program.data = dt;
-                                // dgv_data.DataSource = dt;
                             }
                         }
                         client.Disconnect();
+                        return dt;
                     }
                     else
                     {
@@ -61,6 +59,7 @@ namespace EYN_Store
             {
                 MessageBox.Show(ex.Message);
             }
+            return null;
         }
     }
 }

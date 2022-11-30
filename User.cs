@@ -16,11 +16,21 @@ namespace EYN_Store
         private string PhoneNumber;
         private string UserName;
         private bool IsAdmin;
-        private bool Status;
+        private string Status;
 
-        User () { }
+        public User () { }
 
-        User (int iD, string name, string lastName, string password, string email, string phoneNumber, string userName, bool isAdmin, bool status)
+        public User(string name, string lastName, string password, string email, string phoneNumber, string userName)
+        {
+            Name = name;
+            LastName = lastName;
+            Password = password;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            UserName = userName;
+        }
+
+        public User(int iD, string name, string lastName, string password, string email, string phoneNumber, string userName, bool isAdmin, string status)
         {
             ID = iD;
             Name = name;
@@ -49,6 +59,6 @@ namespace EYN_Store
 
         public bool Task_IsAdmin { get { return IsAdmin; } set { IsAdmin = value; } }
 
-        public bool Task_Status { get { return Status; } set { Status = value; } }
+        public string Task_Status { get { return Status; } set { Status = value; } }
     }
 }
