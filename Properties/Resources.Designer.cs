@@ -71,7 +71,7 @@ namespace EYN_Store.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap EYN___Ligth_blue_Logo {
             get {
@@ -91,7 +91,7 @@ namespace EYN_Store.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap EYN___Ligth_Green___No_BG {
             get {
@@ -101,7 +101,7 @@ namespace EYN_Store.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap EYN___Logo {
             get {
@@ -116,16 +116,6 @@ namespace EYN_Store.Properties {
         internal static System.Drawing.Bitmap logo_EYN {
             get {
                 object obj = ResourceManager.GetObject("logo EYN", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_EYN1 {
-            get {
-                object obj = ResourceManager.GetObject("logo EYN1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
