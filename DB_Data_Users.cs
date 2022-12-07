@@ -24,5 +24,18 @@ namespace EYN_Store
             dB_Connection.SendQueryToDB($"INSERT INTO Users (`U_Name`, `U_LastName`, `U_Password`, `U_Email`, `U_PhoneNumber`, `U_UserName`) VALUES ('{user.Task_Name}','{user.Task_LastName}','{user.Task_Password}','{user.Task_Email}','{user.Task_PhoneNumber}','{user.Task_UserName}');");
             MessageBox.Show($"El usuario '{user.Task_UserName}' ha sido añadido exitosamente.");
         }
+        public DataTable GetUserBy(string by, string value)
+        {
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Users WHERE {by} LIKE '%{value}%';");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar obtener el usuario.");
+                return null;
+            }
+        }
     }
 }

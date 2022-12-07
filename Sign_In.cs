@@ -45,12 +45,6 @@ namespace EYN_Store
             }
         }
 
-        private void btn_sign_up_Click(object sender, EventArgs e)
-        {
-            Sign_Up sign_Up = new Sign_Up();
-            sign_Up.Show();
-        }
-
         private void txt_password_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

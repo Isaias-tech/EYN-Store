@@ -42,9 +42,8 @@
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_lastname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_sign_in = new Guna.UI2.WinForms.Guna2Button();
             this.btn_sign_up = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -129,7 +128,6 @@
             this.guna2GradientPanel1.Controls.Add(this.txt_password);
             this.guna2GradientPanel1.Controls.Add(this.txt_lastname);
             this.guna2GradientPanel1.Controls.Add(this.txt_name);
-            this.guna2GradientPanel1.Controls.Add(this.btn_sign_in);
             this.guna2GradientPanel1.Controls.Add(this.btn_sign_up);
             this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.label1);
@@ -291,41 +289,6 @@
             this.txt_name.Size = new System.Drawing.Size(260, 43);
             this.txt_name.TabIndex = 22;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::EYN_Store.Properties.Resources.EYN___Ligth_blue_Logo___No_BG;
-            this.pictureBox1.Location = new System.Drawing.Point(-61, -22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 572);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_sign_in
-            // 
-            this.btn_sign_in.BackColor = System.Drawing.Color.Transparent;
-            this.btn_sign_in.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_sign_in.BorderRadius = 5;
-            this.btn_sign_in.BorderThickness = 2;
-            this.btn_sign_in.CheckedState.Parent = this.btn_sign_in;
-            this.btn_sign_in.CustomImages.Parent = this.btn_sign_in;
-            this.btn_sign_in.FillColor = System.Drawing.Color.Transparent;
-            this.btn_sign_in.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sign_in.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_sign_in.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.btn_sign_in.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_sign_in.HoverState.ForeColor = System.Drawing.Color.Navy;
-            this.btn_sign_in.HoverState.Parent = this.btn_sign_in;
-            this.btn_sign_in.Location = new System.Drawing.Point(410, 471);
-            this.btn_sign_in.Name = "btn_sign_in";
-            this.btn_sign_in.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_sign_in.ShadowDecoration.Parent = this.btn_sign_in;
-            this.btn_sign_in.Size = new System.Drawing.Size(145, 45);
-            this.btn_sign_in.TabIndex = 7;
-            this.btn_sign_in.Text = "Iniciar Sesión";
-            this.btn_sign_in.Click += new System.EventHandler(this.btn_sign_in_Click_1);
-            // 
             // btn_sign_up
             // 
             this.btn_sign_up.BackColor = System.Drawing.Color.Transparent;
@@ -340,14 +303,25 @@
             this.btn_sign_up.HoverState.FillColor = System.Drawing.Color.Navy;
             this.btn_sign_up.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_sign_up.HoverState.Parent = this.btn_sign_up;
-            this.btn_sign_up.Location = new System.Drawing.Point(744, 471);
+            this.btn_sign_up.Location = new System.Drawing.Point(410, 471);
             this.btn_sign_up.Name = "btn_sign_up";
             this.btn_sign_up.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_sign_up.ShadowDecoration.Parent = this.btn_sign_up;
-            this.btn_sign_up.Size = new System.Drawing.Size(145, 45);
+            this.btn_sign_up.Size = new System.Drawing.Size(479, 45);
             this.btn_sign_up.TabIndex = 6;
             this.btn_sign_up.Text = "Registrarme";
             this.btn_sign_up.Click += new System.EventHandler(this.btn_sign_up_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::EYN_Store.Properties.Resources.EYN___Ligth_blue_Logo___No_BG;
+            this.pictureBox1.Location = new System.Drawing.Point(-61, -22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(555, 572);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Sign_Up
             // 
@@ -361,7 +335,7 @@
             this.MaximizeBox = false;
             this.Name = "Sign_Up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sign_Up";
+            this.Text = "Registro";
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -378,7 +352,6 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btn_sign_in;
         private Guna.UI2.WinForms.Guna2Button btn_sign_up;
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;

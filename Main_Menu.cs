@@ -29,5 +29,16 @@ namespace EYN_Store
                 e.Cancel = true;
             }
         }
+
+        private void btn_user_manager_Click(object sender, EventArgs e)
+        {
+            ManageUsers manageUsers = new ManageUsers();
+            manageUsers.Show();
+        }
+
+        private void Main_Menu_Load(object sender, EventArgs e)
+        {
+            if (!Program.CurrentUser.Task_IsAdmin) btn_user_manager.Visible = false;
+        }
     }
 }
