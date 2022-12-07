@@ -214,7 +214,6 @@ namespace EYN_Store
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::EYN_Store.Properties.Resources.logo_EYN1;
             this.pictureBox1.Location = new System.Drawing.Point(29, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(202, 188);
