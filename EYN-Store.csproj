@@ -57,6 +57,12 @@
   <ItemGroup>
     <Compile Include="DB_Connection.cs" />
     <Compile Include="DB_Data_Users.cs" />
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EYN - Ligth blue Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EYN - Dark Green - No BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EYN - Ligth Green - No BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EYN - Ligth blue Logo - No BG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
