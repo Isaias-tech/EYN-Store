@@ -17,12 +17,12 @@ namespace EYN_Store
             InitializeComponent();
         }
 
-        private void btn_sign_in_Click(object sender, EventArgs e)
+        private void btn_sign_in_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btn_sign_up_Click(object sender, EventArgs e)
+        private void btn_sign_up_Click_1(object sender, EventArgs e)
         {
             if (txt_name.Text.Length > 0 && txt_lastname.Text.Length > 0 && txt_password.Text.Length > 0 && txt_email.Text.Length > 0 && txt_phone.Text.Length > 0 && txt_username.Text.Length > 0)
             {
