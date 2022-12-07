@@ -17,9 +17,40 @@ namespace EYN_Store
             InitializeComponent();
         }
 
-        private void SueldoNeto_Empleado_Load(object sender, EventArgs e)
-        {
+     
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            double AFP = 0.07,ARS=0.03,Cooperativa=0.02,totalimpuesto,TOTAL;
+            
+            if (Convert.ToInt32(sueldosinimpuesto.Text) >= 34334 && Convert.ToInt32(sueldosinimpuesto.Text) < 5000)
+            {
+                TOTAL = AFP + ARS + Cooperativa+0.15;
+                totalimpuesto = (Convert.ToDouble(sueldosinimpuesto.Text) * TOTAL);
+                sueldoconimpuesto.Text = Convert.ToString(Convert.ToDouble(sueldosinimpuesto.Text) - totalimpuesto);
+            }
+            else if (Convert.ToInt32(sueldosinimpuesto.Text) >= 51000 && Convert.ToInt32(sueldosinimpuesto.Text) < 100000)
+            {
+                TOTAL = AFP + ARS + Cooperativa + 0.20;
+                totalimpuesto = (Convert.ToDouble(sueldosinimpuesto.Text) * TOTAL);
+                sueldoconimpuesto.Text = Convert.ToString(Convert.ToDouble(sueldosinimpuesto.Text) - totalimpuesto);
+            }
+            else if (Convert.ToInt32(sueldosinimpuesto.Text) > 100000)
+            {
+                TOTAL = AFP + ARS + Cooperativa + 0.25;
+                totalimpuesto = (Convert.ToDouble(sueldosinimpuesto.Text) * TOTAL);
+                sueldoconimpuesto.Text = Convert.ToString(Convert.ToDouble(sueldosinimpuesto.Text) - totalimpuesto);
+            }
+            else
+            {
+                TOTAL = AFP + ARS + Cooperativa ;
+                totalimpuesto = (Convert.ToDouble(sueldosinimpuesto.Text) * TOTAL);
+                sueldoconimpuesto.Text = Convert.ToString(Convert.ToDouble(sueldosinimpuesto.Text) - totalimpuesto);
+            }
+            //sueldoconimpuesto.Text = Convert.ToString(Convert.ToDouble(sueldosinimpuesto.Text)*AFP*ARS*Cooperativa);
+            
         }
+
+        
     }
 }

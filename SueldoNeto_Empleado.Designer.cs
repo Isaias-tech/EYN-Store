@@ -39,12 +39,14 @@ namespace EYN_Store
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.sueldosinimpuesto = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.sueldoconimpuesto = new System.Windows.Forms.TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -153,12 +155,12 @@ namespace EYN_Store
             this.textBox2.Size = new System.Drawing.Size(312, 22);
             this.textBox2.TabIndex = 9;
             // 
-            // textBox3
+            // sueldosinimpuesto
             // 
-            this.textBox3.Location = new System.Drawing.Point(613, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(312, 22);
-            this.textBox3.TabIndex = 10;
+            this.sueldosinimpuesto.Location = new System.Drawing.Point(613, 170);
+            this.sueldosinimpuesto.Name = "sueldosinimpuesto";
+            this.sueldosinimpuesto.Size = new System.Drawing.Size(312, 22);
+            this.sueldosinimpuesto.TabIndex = 10;
             // 
             // textBox4
             // 
@@ -191,8 +193,10 @@ namespace EYN_Store
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(182)))), ((int)(((byte)(168)))));
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.sueldoconimpuesto);
             this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.sueldosinimpuesto);
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label2);
@@ -211,20 +215,40 @@ namespace EYN_Store
             this.panel1.Size = new System.Drawing.Size(981, 313);
             this.panel1.TabIndex = 15;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Felix Titling", 10F);
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(735, 232);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(166, 20);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Sueldo restante";
+            // 
+            // sueldoconimpuesto
+            // 
+            this.sueldoconimpuesto.Location = new System.Drawing.Point(728, 255);
+            this.sueldoconimpuesto.Name = "sueldoconimpuesto";
+            this.sueldoconimpuesto.Size = new System.Drawing.Size(184, 22);
+            this.sueldoconimpuesto.TabIndex = 16;
+          
+            // 
             // guna2Button1
             // 
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.DarkSeaGreen;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(513, 239);
+            this.guna2Button1.Location = new System.Drawing.Point(513, 232);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 15;
-            this.guna2Button1.Text = "guna2Button1";
+            this.guna2Button1.Text = "Calcular sueldo";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // pictureBox1
             // 
@@ -248,7 +272,6 @@ namespace EYN_Store
             this.Controls.Add(this.label1);
             this.Name = "SueldoNeto_Empleado";
             this.Text = "SueldoNeto_Empleado";
-            this.Load += new System.EventHandler(this.SueldoNeto_Empleado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -269,7 +292,7 @@ namespace EYN_Store
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox sueldosinimpuesto;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
@@ -277,5 +300,7 @@ namespace EYN_Store
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox sueldoconimpuesto;
     }
 }

@@ -40,5 +40,11 @@ namespace EYN_Store
         {
             if (!Program.CurrentUser.Task_IsAdmin) btn_user_manager.Visible = false;
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SueldoNeto_Empleado sueldoempleado = new SueldoNeto_Empleado();
+            sueldoempleado.Show();
+        }
     }
 }
