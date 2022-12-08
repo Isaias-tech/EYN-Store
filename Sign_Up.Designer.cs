@@ -147,6 +147,8 @@
             // 
             // txt_username
             // 
+            this.txt_username.BackColor = System.Drawing.Color.Transparent;
+            this.txt_username.BorderRadius = 5;
             this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_username.DefaultText = "";
             this.txt_username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -171,6 +173,8 @@
             // 
             // txt_phone
             // 
+            this.txt_phone.BackColor = System.Drawing.Color.Transparent;
+            this.txt_phone.BorderRadius = 5;
             this.txt_phone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_phone.DefaultText = "";
             this.txt_phone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -195,6 +199,8 @@
             // 
             // txt_email
             // 
+            this.txt_email.BackColor = System.Drawing.Color.Transparent;
+            this.txt_email.BorderRadius = 5;
             this.txt_email.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_email.DefaultText = "";
             this.txt_email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -219,6 +225,8 @@
             // 
             // txt_password
             // 
+            this.txt_password.BackColor = System.Drawing.Color.Transparent;
+            this.txt_password.BorderRadius = 5;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultText = "";
             this.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -243,6 +251,8 @@
             // 
             // txt_lastname
             // 
+            this.txt_lastname.BackColor = System.Drawing.Color.Transparent;
+            this.txt_lastname.BorderRadius = 5;
             this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_lastname.DefaultText = "";
             this.txt_lastname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -267,6 +277,8 @@
             // 
             // txt_name
             // 
+            this.txt_name.BackColor = System.Drawing.Color.Transparent;
+            this.txt_name.BorderRadius = 5;
             this.txt_name.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_name.DefaultText = "";
             this.txt_name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

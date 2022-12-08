@@ -55,8 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB_Connection.cs" />
+    <Compile Include="DB_Data_Employee.cs" />
     <Compile Include="DB_Data_Users.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManager.Designer.cs">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Invoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +110,9 @@
       <DependentUpon>SueldoNeto_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="EmployeeManager.resx">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </EmbeddedResource>

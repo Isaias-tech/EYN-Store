@@ -12,6 +12,7 @@ namespace EYN_Store
         public static Sign_In sign_in;
         public static User CurrentUser;
         public static DataTable data;
+        public static Employee selectedEmployee;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

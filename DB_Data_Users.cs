@@ -12,7 +12,7 @@ namespace EYN_Store
     {
         public DB_Data_Users() { }
 
-        public DataTable GetUsers(string query = "SELECT * FROM Users;")
+        public DataTable GetUsers(string query = "SELECT `ID`, `U_Name` AS `Nombre/s`, `U_LastName` AS `Apellido/s`, `U_Email` AS `Email`, `U_PhoneNumber` AS `Numero de telefono`, `U_UserName` AS `Nombre de usuario`, `U_IsAdmin` AS `Es Administrador`, `U_Status` AS `Estado` FROM Users;")
         {
             DB_Connection dB_Connection = new DB_Connection();
             return dB_Connection.SendQueryToDB(query);

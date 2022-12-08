@@ -105,6 +105,8 @@
             // 
             // txt_password
             // 
+            this.txt_password.BackColor = System.Drawing.Color.Transparent;
+            this.txt_password.BorderRadius = 5;
             this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_password.DefaultText = "";
             this.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -129,6 +131,8 @@
             // 
             // txt_username
             // 
+            this.txt_username.BackColor = System.Drawing.Color.Transparent;
+            this.txt_username.BorderRadius = 5;
             this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_username.DefaultText = "";
             this.txt_username.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

@@ -46,5 +46,11 @@ namespace EYN_Store
             SueldoNeto_Empleado sueldoempleado = new SueldoNeto_Empleado();
             sueldoempleado.Show();
         }
+
+        private void btn_employee_manager_Click(object sender, EventArgs e)
+        {
+            EmployeeManager em = new EmployeeManager();
+            em.Show();
+        }
     }
 }
