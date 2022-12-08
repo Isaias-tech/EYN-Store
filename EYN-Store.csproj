@@ -61,8 +61,11 @@
     <Compile Include="AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Branch.cs" />
     <Compile Include="DB_Connection.cs" />
+    <Compile Include="DB_Data_Branch.cs" />
     <Compile Include="DB_Data_Employee.cs" />
+    <Compile Include="DB_Data_Position.cs" />
     <Compile Include="DB_Data_Users.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeManager.cs">
@@ -89,6 +92,7 @@
     <Compile Include="ManageUsers.Designer.cs">
       <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Position.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sign_In.cs">

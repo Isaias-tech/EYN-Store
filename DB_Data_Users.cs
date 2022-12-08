@@ -37,5 +37,19 @@ namespace EYN_Store
                 return null;
             }
         }
+
+        public DataTable GetUserByID(string ID)
+        {
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Users WHERE ID={ID};");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar obtener el usuario.");
+            }
+            return new DataTable();
+        }
     }
 }

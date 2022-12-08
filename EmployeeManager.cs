@@ -38,7 +38,7 @@ namespace EYN_Store
         private void dgv_employee_DoubleClick(object sender, EventArgs e)
         {
             var cells = dgv_employee.SelectedRows[0].Cells;
-            new Employee(Convert.ToInt32(cells[0].Value), Convert.ToInt32(cells[1].Value), cells[2].Value.ToString(), cells[3].Value.ToString(), Convert.ToInt32(cells[4].Value), Convert.ToInt32(cells[5].Value), Convert.ToString(cells[6].Value));
+            Program.selectedEmployee = new Employee(Convert.ToInt32(cells[0].Value), Convert.ToInt32(cells[1].Value), cells[2].Value.ToString(), cells[3].Value.ToString(), Convert.ToInt32(cells[4].Value), Convert.ToInt32(cells[5].Value), Convert.ToString(cells[6].Value));
             SueldoNeto_Empleado sne = new SueldoNeto_Empleado();
             sne.Show();
         }
