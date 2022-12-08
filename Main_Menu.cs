@@ -32,25 +32,37 @@ namespace EYN_Store
 
         private void btn_user_manager_Click(object sender, EventArgs e)
         {
-            ManageUsers manageUsers = new ManageUsers();
-            manageUsers.Show();
+            AdminPanel ap = new AdminPanel();
+            ap.Show();
         }
 
         private void Main_Menu_Load(object sender, EventArgs e)
         {
-            if (!Program.CurrentUser.Task_IsAdmin) btn_user_manager.Visible = false;
+            if (!Program.CurrentUser.Task_IsAdmin) btn_admin_panel.Visible = false;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btn_products_Click(object sender, EventArgs e)
         {
-            SueldoNeto_Empleado sueldoempleado = new SueldoNeto_Empleado();
-            sueldoempleado.Show();
+            ClientProducts cp = new ClientProducts();
+            cp.Show();
         }
 
-        private void btn_employee_manager_Click(object sender, EventArgs e)
+        private void btn_services_Click(object sender, EventArgs e)
         {
-            EmployeeManager em = new EmployeeManager();
-            em.Show();
+            ClientServices clientServices = new ClientServices();
+            clientServices.Show();
+        }
+
+        private void btn_cart_Click(object sender, EventArgs e)
+        {
+            Cart cart = new Cart();
+            cart.Show();
+        }
+
+        private void btn_invoice_manager_Click(object sender, EventArgs e)
+        {
+            GenerateInvoice generateInvoice = new GenerateInvoice();
+            generateInvoice.Show();
         }
     }
 }
