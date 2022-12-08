@@ -137,6 +137,7 @@
             this.dgv_data.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_data.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_data.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_data.DoubleClick += new System.EventHandler(this.dgv_data_DoubleClick);
             // 
             // panel1
             // 
@@ -218,6 +219,7 @@
             this.btn_edit.Size = new System.Drawing.Size(84, 45);
             this.btn_edit.TabIndex = 2;
             this.btn_edit.Text = "Editar";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // btn_add_user
             // 

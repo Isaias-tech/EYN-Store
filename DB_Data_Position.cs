@@ -46,11 +46,11 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`ID_User` AS `ID de usuario`,`E_Direction` AS `Dirección`,`E_Identification` AS `Identificación`,`ID_Position` AS `ID de posición`,`ID_Position` AS `ID de sucursal`,`E_Status` AS `Estado` FROM Employees;");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`, `P_Name` AS `Nombre`, `P_Description` AS `Descripción`, `P_Salary` AS `Salario`,`P_Status` AS `Estado` FROM Positions;");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener los usuario.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener las posiciones.");
             }
             return new DataTable();
         }

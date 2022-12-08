@@ -196,7 +196,7 @@ namespace EYN_Store
             this.txt_salary_neto.Location = new System.Drawing.Point(506, 154);
             this.txt_salary_neto.Name = "txt_salary_neto";
             this.txt_salary_neto.PasswordChar = '\0';
-            this.txt_salary_neto.PlaceholderText = "";
+            this.txt_salary_neto.PlaceholderText = "-----------";
             this.txt_salary_neto.SelectedText = "";
             this.txt_salary_neto.ShadowDecoration.Parent = this.txt_salary_neto;
             this.txt_salary_neto.Size = new System.Drawing.Size(116, 31);
@@ -219,7 +219,7 @@ namespace EYN_Store
             this.txt_salary.Location = new System.Drawing.Point(506, 106);
             this.txt_salary.Name = "txt_salary";
             this.txt_salary.PasswordChar = '\0';
-            this.txt_salary.PlaceholderText = "";
+            this.txt_salary.PlaceholderText = "-----------";
             this.txt_salary.SelectedText = "";
             this.txt_salary.ShadowDecoration.Parent = this.txt_salary;
             this.txt_salary.Size = new System.Drawing.Size(248, 31);
@@ -242,7 +242,7 @@ namespace EYN_Store
             this.txt_position.Location = new System.Drawing.Point(506, 58);
             this.txt_position.Name = "txt_position";
             this.txt_position.PasswordChar = '\0';
-            this.txt_position.PlaceholderText = "";
+            this.txt_position.PlaceholderText = "-----------";
             this.txt_position.SelectedText = "";
             this.txt_position.ShadowDecoration.Parent = this.txt_position;
             this.txt_position.Size = new System.Drawing.Size(248, 31);
@@ -265,7 +265,7 @@ namespace EYN_Store
             this.txt_branch.Location = new System.Drawing.Point(506, 11);
             this.txt_branch.Name = "txt_branch";
             this.txt_branch.PasswordChar = '\0';
-            this.txt_branch.PlaceholderText = "";
+            this.txt_branch.PlaceholderText = "-----------";
             this.txt_branch.SelectedText = "";
             this.txt_branch.ShadowDecoration.Parent = this.txt_branch;
             this.txt_branch.Size = new System.Drawing.Size(248, 31);
@@ -288,7 +288,7 @@ namespace EYN_Store
             this.txt_direction.Location = new System.Drawing.Point(121, 154);
             this.txt_direction.Name = "txt_direction";
             this.txt_direction.PasswordChar = '\0';
-            this.txt_direction.PlaceholderText = "";
+            this.txt_direction.PlaceholderText = "-----------";
             this.txt_direction.SelectedText = "";
             this.txt_direction.ShadowDecoration.Parent = this.txt_direction;
             this.txt_direction.Size = new System.Drawing.Size(241, 31);
@@ -311,7 +311,7 @@ namespace EYN_Store
             this.txt_phone.Location = new System.Drawing.Point(121, 109);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
-            this.txt_phone.PlaceholderText = "";
+            this.txt_phone.PlaceholderText = "-----------";
             this.txt_phone.SelectedText = "";
             this.txt_phone.ShadowDecoration.Parent = this.txt_phone;
             this.txt_phone.Size = new System.Drawing.Size(241, 31);
@@ -334,7 +334,7 @@ namespace EYN_Store
             this.txt_name.Location = new System.Drawing.Point(121, 61);
             this.txt_name.Name = "txt_name";
             this.txt_name.PasswordChar = '\0';
-            this.txt_name.PlaceholderText = "";
+            this.txt_name.PlaceholderText = "-----------";
             this.txt_name.SelectedText = "";
             this.txt_name.ShadowDecoration.Parent = this.txt_name;
             this.txt_name.Size = new System.Drawing.Size(241, 31);
@@ -357,7 +357,7 @@ namespace EYN_Store
             this.txt_id.Location = new System.Drawing.Point(121, 14);
             this.txt_id.Name = "txt_id";
             this.txt_id.PasswordChar = '\0';
-            this.txt_id.PlaceholderText = "";
+            this.txt_id.PlaceholderText = "-----------";
             this.txt_id.SelectedText = "";
             this.txt_id.ShadowDecoration.Parent = this.txt_id;
             this.txt_id.Size = new System.Drawing.Size(241, 31);

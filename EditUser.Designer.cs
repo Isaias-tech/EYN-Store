@@ -1,6 +1,6 @@
 ﻿namespace EYN_Store
 {
-    partial class Sign_Up
+    partial class EditUser
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_Up));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUser));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,93 +36,29 @@
             this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_lastname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_sign_up = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_save = new Guna.UI2.WinForms.Guna2Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_cancel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(408, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 22);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Nombre: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(408, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 22);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Apellidos: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(408, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 22);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Contraseña: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(408, 259);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(169, 22);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Correo electronico:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(408, 336);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 22);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Numero de telefono:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(406, 414);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 22);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Nombre de usuario:";
-            // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.Controls.Add(this.btn_cancel);
             this.guna2GradientPanel1.Controls.Add(this.txt_username);
             this.guna2GradientPanel1.Controls.Add(this.txt_phone);
             this.guna2GradientPanel1.Controls.Add(this.txt_email);
             this.guna2GradientPanel1.Controls.Add(this.txt_password);
             this.guna2GradientPanel1.Controls.Add(this.txt_lastname);
             this.guna2GradientPanel1.Controls.Add(this.txt_name);
-            this.guna2GradientPanel1.Controls.Add(this.btn_sign_up);
+            this.guna2GradientPanel1.Controls.Add(this.btn_save);
             this.guna2GradientPanel1.Controls.Add(this.label6);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.label5);
@@ -142,8 +72,8 @@
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(918, 528);
-            this.guna2GradientPanel1.TabIndex = 22;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(917, 535);
+            this.guna2GradientPanel1.TabIndex = 23;
             // 
             // txt_username
             // 
@@ -301,53 +231,146 @@
             this.txt_name.Size = new System.Drawing.Size(260, 43);
             this.txt_name.TabIndex = 22;
             // 
-            // btn_sign_up
+            // btn_save
             // 
-            this.btn_sign_up.BackColor = System.Drawing.Color.Transparent;
-            this.btn_sign_up.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_sign_up.BorderRadius = 5;
-            this.btn_sign_up.CheckedState.Parent = this.btn_sign_up;
-            this.btn_sign_up.CustomImages.Parent = this.btn_sign_up;
-            this.btn_sign_up.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_sign_up.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sign_up.ForeColor = System.Drawing.Color.White;
-            this.btn_sign_up.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_sign_up.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.btn_sign_up.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_sign_up.HoverState.Parent = this.btn_sign_up;
-            this.btn_sign_up.Location = new System.Drawing.Point(410, 471);
-            this.btn_sign_up.Name = "btn_sign_up";
-            this.btn_sign_up.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_sign_up.ShadowDecoration.Parent = this.btn_sign_up;
-            this.btn_sign_up.Size = new System.Drawing.Size(479, 45);
-            this.btn_sign_up.TabIndex = 6;
-            this.btn_sign_up.Text = "Registrarme";
-            this.btn_sign_up.Click += new System.EventHandler(this.btn_sign_up_Click_1);
+            this.btn_save.BackColor = System.Drawing.Color.Transparent;
+            this.btn_save.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_save.BorderRadius = 5;
+            this.btn_save.CheckedState.Parent = this.btn_save;
+            this.btn_save.CustomImages.Parent = this.btn_save;
+            this.btn_save.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_save.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_save.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_save.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_save.HoverState.Parent = this.btn_save;
+            this.btn_save.Location = new System.Drawing.Point(671, 471);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_save.ShadowDecoration.Parent = this.btn_save;
+            this.btn_save.Size = new System.Drawing.Size(218, 45);
+            this.btn_save.TabIndex = 6;
+            this.btn_save.Text = "Guardar";
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(406, 414);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 22);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Nombre de usuario:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(408, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 22);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Nombre: ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(408, 336);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(175, 22);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Numero de telefono:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(408, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(169, 22);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Correo electronico:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(408, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 22);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Contraseña: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(408, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 22);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Apellidos: ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::EYN_Store.Properties.Resources.EYN___Ligth_blue_Logo___No_BG;
-            this.pictureBox1.Location = new System.Drawing.Point(-61, -22);
+            this.pictureBox1.Location = new System.Drawing.Point(-61, -26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 572);
+            this.pictureBox1.Size = new System.Drawing.Size(555, 588);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // Sign_Up
+            // btn_cancel
+            // 
+            this.btn_cancel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.BorderColor = System.Drawing.Color.Red;
+            this.btn_cancel.BorderRadius = 5;
+            this.btn_cancel.BorderThickness = 2;
+            this.btn_cancel.CheckedState.Parent = this.btn_cancel;
+            this.btn_cancel.CustomImages.Parent = this.btn_cancel;
+            this.btn_cancel.FillColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.Red;
+            this.btn_cancel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.HoverState.Parent = this.btn_cancel;
+            this.btn_cancel.Location = new System.Drawing.Point(410, 471);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.ShadowDecoration.Parent = this.btn_cancel;
+            this.btn_cancel.Size = new System.Drawing.Size(204, 45);
+            this.btn_cancel.TabIndex = 28;
+            this.btn_cancel.Text = "Cancelar";
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(918, 528);
+            this.ClientSize = new System.Drawing.Size(917, 535);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "Sign_Up";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro";
+            this.Name = "EditUser";
+            this.Text = "Editar usuario";
+            this.Load += new System.EventHandler(this.EditUser_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -356,20 +379,22 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btn_sign_up;
+        private Guna.UI2.WinForms.Guna2Button btn_cancel;
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;
+        private Guna.UI2.WinForms.Guna2TextBox txt_email;
         private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private Guna.UI2.WinForms.Guna2TextBox txt_lastname;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
-        private Guna.UI2.WinForms.Guna2TextBox txt_email;
+        private Guna.UI2.WinForms.Guna2Button btn_save;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

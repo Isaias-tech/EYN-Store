@@ -67,6 +67,12 @@
     <Compile Include="DB_Data_Employee.cs" />
     <Compile Include="DB_Data_Position.cs" />
     <Compile Include="DB_Data_Users.cs" />
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeeManager.cs">
       <SubType>Form</SubType>
@@ -114,6 +120,12 @@
       <DependentUpon>SueldoNeto_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManager.resx">
       <DependentUpon>EmployeeManager.cs</DependentUpon>
     </EmbeddedResource>

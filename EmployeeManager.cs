@@ -26,7 +26,7 @@ namespace EYN_Store
         {
             try
             {
-                DataTable dt = new DB_Data_Employee().getEmployeeBy("E_Identification", txt_search.Text);
+                DataTable dt = new DB_Data_Employee().getEmployeeBy("U_UserName", txt_search.Text);
                 dgv_employee.DataSource = dt;
             }
             catch
@@ -37,10 +37,41 @@ namespace EYN_Store
 
         private void dgv_employee_DoubleClick(object sender, EventArgs e)
         {
+            if (MessageBox.Show("¿Esta seguro de que desea eliminar este empleado?", "¡Atención!", MessageBoxButtons.YesNo).ToString() == "Yes")
+            {
+                foreach (DataGridViewRow row in dgv_employee.SelectedRows)
+                {
+                    dgv_employee.DataSource = new DB_Data_Employee().deleteEmployee(Convert.ToString(row.Cells[0].Value));
+                }
+            }
+        }
+
+        private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dgv_employee.DataSource = new DB_Data_Employee().getEmployees();
+        }
+
+        private void btn_add_employee_Click(object sender, EventArgs e)
+        {
+            AddEmployee ae = new AddEmployee();
+            ae.Show();
+            ae.FormClosing += AddEmployee_FormClosing;
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
             var cells = dgv_employee.SelectedRows[0].Cells;
-            Program.selectedEmployee = new Employee(Convert.ToInt32(cells[0].Value), Convert.ToInt32(cells[1].Value), cells[2].Value.ToString(), cells[3].Value.ToString(), Convert.ToInt32(cells[4].Value), Convert.ToInt32(cells[5].Value), Convert.ToString(cells[6].Value));
-            SueldoNeto_Empleado sne = new SueldoNeto_Empleado();
-            sne.Show();
+            if (Convert.ToString(cells[0].Value).Length > 0)
+            {
+                Employee u = new Employee(Convert.ToInt32(cells[1].Value), Convert.ToString(cells[3].Value), cells[4].Value.ToString(), Convert.ToInt32(cells[5].Value), Convert.ToInt32(cells[6].Value));
+                Program.selectedEmployee = u;
+                SueldoNeto_Empleado sne = new SueldoNeto_Empleado();
+                sne.Show();
+            }
+        }
+        private void EditEmployee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            dgv_employee.DataSource = new DB_Data_Employee().getEmployees();
         }
     }
 }

@@ -31,12 +31,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeManager));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_add_user = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_details = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add_employee = new Guna.UI2.WinForms.Guna2Button();
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,7 +70,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(131, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(692, 47);
+            this.panel3.Size = new System.Drawing.Size(690, 47);
             this.panel3.TabIndex = 2;
             // 
             // txt_search
@@ -94,65 +95,67 @@
             this.txt_search.PlaceholderText = "";
             this.txt_search.SelectedText = "";
             this.txt_search.ShadowDecoration.Parent = this.txt_search;
-            this.txt_search.Size = new System.Drawing.Size(692, 47);
+            this.txt_search.Size = new System.Drawing.Size(690, 47);
             this.txt_search.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btn_edit);
-            this.panel2.Controls.Add(this.btn_add_user);
+            this.panel2.Controls.Add(this.btn_details);
+            this.panel2.Controls.Add(this.btn_add_employee);
             this.panel2.Controls.Add(this.btn_search);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(823, 0);
+            this.panel2.Location = new System.Drawing.Point(821, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(264, 47);
+            this.panel2.Size = new System.Drawing.Size(266, 47);
             this.panel2.TabIndex = 1;
             // 
-            // btn_edit
+            // btn_details
             // 
-            this.btn_edit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_edit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_edit.BorderRadius = 5;
-            this.btn_edit.BorderThickness = 2;
-            this.btn_edit.CheckedState.Parent = this.btn_edit;
-            this.btn_edit.CustomImages.Parent = this.btn_edit;
-            this.btn_edit.FillColor = System.Drawing.Color.Transparent;
-            this.btn_edit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_edit.HoverState.CustomBorderColor = System.Drawing.Color.Blue;
-            this.btn_edit.HoverState.ForeColor = System.Drawing.Color.Blue;
-            this.btn_edit.HoverState.Parent = this.btn_edit;
-            this.btn_edit.Location = new System.Drawing.Point(175, 3);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.PressedColor = System.Drawing.Color.Blue;
-            this.btn_edit.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_edit.ShadowDecoration.Parent = this.btn_edit;
-            this.btn_edit.Size = new System.Drawing.Size(82, 41);
-            this.btn_edit.TabIndex = 5;
-            this.btn_edit.Text = "Editar";
+            this.btn_details.BackColor = System.Drawing.Color.Transparent;
+            this.btn_details.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_details.BorderRadius = 5;
+            this.btn_details.BorderThickness = 2;
+            this.btn_details.CheckedState.Parent = this.btn_details;
+            this.btn_details.CustomImages.Parent = this.btn_details;
+            this.btn_details.FillColor = System.Drawing.Color.Transparent;
+            this.btn_details.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_details.ForeColor = System.Drawing.Color.Cyan;
+            this.btn_details.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_details.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_details.HoverState.Parent = this.btn_details;
+            this.btn_details.Location = new System.Drawing.Point(173, 3);
+            this.btn_details.Name = "btn_details";
+            this.btn_details.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_details.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_details.ShadowDecoration.Parent = this.btn_details;
+            this.btn_details.Size = new System.Drawing.Size(82, 41);
+            this.btn_details.TabIndex = 6;
+            this.btn_details.Text = "Detalles";
+            this.btn_details.Click += new System.EventHandler(this.btn_details_Click);
             // 
-            // btn_add_user
+            // btn_add_employee
             // 
-            this.btn_add_user.BackColor = System.Drawing.Color.Transparent;
-            this.btn_add_user.BorderColor = System.Drawing.Color.Lime;
-            this.btn_add_user.BorderRadius = 5;
-            this.btn_add_user.BorderThickness = 2;
-            this.btn_add_user.CheckedState.Parent = this.btn_add_user;
-            this.btn_add_user.CustomImages.Parent = this.btn_add_user;
-            this.btn_add_user.FillColor = System.Drawing.Color.Transparent;
-            this.btn_add_user.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_user.ForeColor = System.Drawing.Color.Lime;
-            this.btn_add_user.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn_add_user.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btn_add_user.HoverState.Parent = this.btn_add_user;
-            this.btn_add_user.Location = new System.Drawing.Point(121, 3);
-            this.btn_add_user.Name = "btn_add_user";
-            this.btn_add_user.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_add_user.ShadowDecoration.Parent = this.btn_add_user;
-            this.btn_add_user.Size = new System.Drawing.Size(46, 41);
-            this.btn_add_user.TabIndex = 4;
-            this.btn_add_user.Text = "+";
+            this.btn_add_employee.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add_employee.BorderColor = System.Drawing.Color.Lime;
+            this.btn_add_employee.BorderRadius = 5;
+            this.btn_add_employee.BorderThickness = 2;
+            this.btn_add_employee.CheckedState.Parent = this.btn_add_employee;
+            this.btn_add_employee.CustomImages.Parent = this.btn_add_employee;
+            this.btn_add_employee.FillColor = System.Drawing.Color.Transparent;
+            this.btn_add_employee.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_employee.ForeColor = System.Drawing.Color.Lime;
+            this.btn_add_employee.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_add_employee.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btn_add_employee.HoverState.Parent = this.btn_add_employee;
+            this.btn_add_employee.Location = new System.Drawing.Point(121, 3);
+            this.btn_add_employee.Name = "btn_add_employee";
+            this.btn_add_employee.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_add_employee.ShadowDecoration.Parent = this.btn_add_employee;
+            this.btn_add_employee.Size = new System.Drawing.Size(46, 41);
+            this.btn_add_employee.TabIndex = 4;
+            this.btn_add_employee.Text = "+";
+            this.btn_add_employee.Click += new System.EventHandler(this.btn_add_employee_Click);
             // 
             // btn_search
             // 
@@ -234,7 +237,9 @@
             this.dgv_employee.EnableHeadersVisualStyles = false;
             this.dgv_employee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_employee.Location = new System.Drawing.Point(0, 0);
+            this.dgv_employee.MultiSelect = false;
             this.dgv_employee.Name = "dgv_employee";
+            this.dgv_employee.ReadOnly = true;
             this.dgv_employee.RowHeadersVisible = false;
             this.dgv_employee.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_employee.Size = new System.Drawing.Size(1087, 403);
@@ -253,7 +258,7 @@
             this.dgv_employee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_employee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_employee.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgv_employee.ThemeStyle.ReadOnly = false;
+            this.dgv_employee.ThemeStyle.ReadOnly = true;
             this.dgv_employee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_employee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_employee.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -270,6 +275,7 @@
             this.ClientSize = new System.Drawing.Size(1087, 450);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmployeeManager";
             this.Text = "Manejador de empleados";
             this.Load += new System.EventHandler(this.EmployeeManager_Load);
@@ -293,9 +299,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btn_edit;
-        private Guna.UI2.WinForms.Guna2Button btn_add_user;
+        private Guna.UI2.WinForms.Guna2Button btn_add_employee;
         private Guna.UI2.WinForms.Guna2Button btn_search;
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
+        private Guna.UI2.WinForms.Guna2Button btn_details;
     }
 }

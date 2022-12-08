@@ -17,11 +17,11 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Employees WHERE {by} LIKE '%{value}%';");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT Employees.ID, Users.ID AS `ID Usuario`, Users.U_UserName AS `Nombre de usuario`, E_Direction AS `Dirección`, E_Identification AS `Identificación`, ID_Position AS `ID de posición`, ID_Branch AS `ID de sucursal`, E_Status AS `Estado` FROM Employees JOIN Users ON Employees.ID_User=Users.ID WHERE Users.{by} LIKE '%{value}%';");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener el usuario.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener el emleado.");
             }
             return new DataTable();
         }
@@ -31,17 +31,27 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`ID_User` AS `ID de usuario`,`E_Direction` AS `Dirección`,`E_Identification` AS `Identificación`,`ID_Position` AS `ID de posición`,`ID_Branch` AS `ID de sucursal`,`E_Status` AS `Estado` FROM Employees;");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT Employees.ID, Users.ID AS `ID Usuario`, Users.U_UserName AS `Nombre de usuario`, E_Direction AS `Dirección`, E_Identification AS `Identificación`, ID_Position AS `ID de posición`, ID_Branch AS `ID de sucursal`, E_Status AS `Estado` FROM Employees JOIN Users ON Employees.ID_User=Users.ID;");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener los usuario.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener los empleados.");
             }
             return new DataTable();
         }
 
         public DataTable addEmployee(Employee employee)
         {
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                string query = $"INSERT INTO Employees (ID_User, E_Direction, E_Identification, ID_Position, ID_Branch) VALUES (\"{employee.EC_ID_User}\", \"{employee.EC_E_Direction}\", \"{employee.EC_E_Identification}\", \"{employee.EC_ID_Position}\", \"{employee.EC_ID_Branch}\");";
+                return ssh_DB_Connection.SendQueryToDB(query);
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar agregar el empleado.");
+            }
             return new DataTable();
         }
 
@@ -50,8 +60,19 @@ namespace EYN_Store
             return new DataTable();
         }
 
-        public DataTable deleteEmployee(string id)
+        public DataTable deleteEmployee(string ID)
         {
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"DELETE FROM Employees WHERE ID={ID};");
+                MessageBox.Show("El empleado ha sido eliminado.");
+                return getEmployees();
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar eliminar el empleado.");
+            }
             return new DataTable();
         }
     }

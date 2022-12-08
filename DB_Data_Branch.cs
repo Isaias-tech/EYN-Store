@@ -45,7 +45,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`ID_User` AS `ID de usuario`,`E_Direction` AS `Dirección`,`E_Identification` AS `Identificación`,`ID_Position` AS `ID de posición`,`ID_Branch` AS `ID de sucursal`,`E_Status` AS `Estado` FROM Employees;");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado` FROM Branchs;");
             }
             catch
             {
