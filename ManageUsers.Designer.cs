@@ -291,6 +291,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageUsers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manejador de usuarios";
             this.Load += new System.EventHandler(this.ManageUsers_Load);
             this.guna2GradientPanel1.ResumeLayout(false);

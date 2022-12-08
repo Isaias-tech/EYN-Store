@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EYN_Store
 {
-    public partial class ProductsManager : Form
+    public partial class ProductTypesManager : Form
     {
-        public ProductsManager()
+        public ProductTypesManager()
         {
             InitializeComponent();
-        }
-
-        private void ProductsManager_Load(object sender, EventArgs e)
-        {
-            dgv_product.DataSource = new DB_Data_Products().getProducts();
         }
     }
 }

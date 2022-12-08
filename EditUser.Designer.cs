@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUser));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btn_cancel = new Guna.UI2.WinForms.Guna2Button();
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_cancel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,30 @@
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(917, 535);
             this.guna2GradientPanel1.TabIndex = 23;
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.BackColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.BorderColor = System.Drawing.Color.Red;
+            this.btn_cancel.BorderRadius = 5;
+            this.btn_cancel.BorderThickness = 2;
+            this.btn_cancel.CheckedState.Parent = this.btn_cancel;
+            this.btn_cancel.CustomImages.Parent = this.btn_cancel;
+            this.btn_cancel.FillColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.Red;
+            this.btn_cancel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.HoverState.Parent = this.btn_cancel;
+            this.btn_cancel.Location = new System.Drawing.Point(410, 471);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_cancel.ShadowDecoration.Parent = this.btn_cancel;
+            this.btn_cancel.Size = new System.Drawing.Size(204, 45);
+            this.btn_cancel.TabIndex = 28;
+            this.btn_cancel.Text = "Cancelar";
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // txt_username
             // 
@@ -337,30 +361,6 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_cancel
-            // 
-            this.btn_cancel.BackColor = System.Drawing.Color.Transparent;
-            this.btn_cancel.BorderColor = System.Drawing.Color.Red;
-            this.btn_cancel.BorderRadius = 5;
-            this.btn_cancel.BorderThickness = 2;
-            this.btn_cancel.CheckedState.Parent = this.btn_cancel;
-            this.btn_cancel.CustomImages.Parent = this.btn_cancel;
-            this.btn_cancel.FillColor = System.Drawing.Color.Transparent;
-            this.btn_cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancel.ForeColor = System.Drawing.Color.Red;
-            this.btn_cancel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancel.HoverState.Parent = this.btn_cancel;
-            this.btn_cancel.Location = new System.Drawing.Point(410, 471);
-            this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_cancel.ShadowDecoration.Parent = this.btn_cancel;
-            this.btn_cancel.Size = new System.Drawing.Size(204, 45);
-            this.btn_cancel.TabIndex = 28;
-            this.btn_cancel.Text = "Cancelar";
-            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
-            // 
             // EditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +369,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Editar usuario";
             this.Load += new System.EventHandler(this.EditUser_Load);
             this.guna2GradientPanel1.ResumeLayout(false);

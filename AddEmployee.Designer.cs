@@ -283,6 +283,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Agregar empleado";
             this.Load += new System.EventHandler(this.AddEmployee_Load);
             this.guna2GradientPanel1.ResumeLayout(false);

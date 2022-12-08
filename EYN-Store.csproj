@@ -68,6 +68,12 @@
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Branch.cs" />
+    <Compile Include="BranchManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchManager.Designer.cs">
+      <DependentUpon>BranchManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,7 @@
     <Compile Include="DB_Data_Branch.cs" />
     <Compile Include="DB_Data_Employee.cs" />
     <Compile Include="DB_Data_Position.cs" />
+    <Compile Include="DB_Data_Products.cs" />
     <Compile Include="DB_Data_Users.cs" />
     <Compile Include="EditUser.cs">
       <SubType>Form</SubType>
@@ -116,6 +123,12 @@
     <Compile Include="Invoice.Designer.cs">
       <DependentUpon>Invoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvoiceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceManager.Designer.cs">
+      <DependentUpon>InvoiceManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,11 +142,24 @@
       <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Position.cs" />
+    <Compile Include="PositionsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositionsManager.Designer.cs">
+      <DependentUpon>PositionsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs" />
     <Compile Include="ProductsManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProductsManager.Designer.cs">
       <DependentUpon>ProductsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTypesManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductTypesManager.Designer.cs">
+      <DependentUpon>ProductTypesManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,17 +188,47 @@
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BranchManager.resx">
+      <DependentUpon>BranchManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientProducts.resx">
+      <DependentUpon>ClientProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientServices.resx">
+      <DependentUpon>ClientServices.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManager.resx">
       <DependentUpon>EmployeeManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GenerateInvoice.resx">
+      <DependentUpon>GenerateInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceManager.resx">
+      <DependentUpon>InvoiceManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageUsers.resx">
       <DependentUpon>ManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionsManager.resx">
+      <DependentUpon>PositionsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsManager.resx">
+      <DependentUpon>ProductsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTypesManager.resx">
+      <DependentUpon>ProductTypesManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

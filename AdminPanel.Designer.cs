@@ -32,13 +32,13 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_user_manager = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_user_user = new Guna.UI2.WinForms.Guna2Button();
             this.btn_products = new Guna.UI2.WinForms.Guna2Button();
             this.btn_employee_manager = new Guna.UI2.WinForms.Guna2Button();
             this.btn_invoice_manager = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_product_type_manager = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_branch_manager = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_position_manager = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -77,13 +77,13 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_user_manager, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_user_user, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btn_products, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn_employee_manager, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_invoice_manager, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button2, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button3, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btn_product_type_manager, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btn_branch_manager, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btn_position_manager, 0, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(429, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -99,29 +99,29 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(371, 368);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // btn_user_manager
+            // btn_user_user
             // 
-            this.btn_user_manager.BorderColor = System.Drawing.Color.Cyan;
-            this.btn_user_manager.BorderRadius = 5;
-            this.btn_user_manager.BorderThickness = 2;
-            this.btn_user_manager.CheckedState.Parent = this.btn_user_manager;
-            this.btn_user_manager.CustomImages.Parent = this.btn_user_manager;
-            this.btn_user_manager.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_user_manager.FillColor = System.Drawing.Color.Transparent;
-            this.btn_user_manager.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_user_manager.ForeColor = System.Drawing.Color.Cyan;
-            this.btn_user_manager.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_user_manager.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_user_manager.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_user_manager.HoverState.Parent = this.btn_user_manager;
-            this.btn_user_manager.Location = new System.Drawing.Point(3, 159);
-            this.btn_user_manager.Name = "btn_user_manager";
-            this.btn_user_manager.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_user_manager.ShadowDecoration.Parent = this.btn_user_manager;
-            this.btn_user_manager.Size = new System.Drawing.Size(365, 46);
-            this.btn_user_manager.TabIndex = 0;
-            this.btn_user_manager.Text = "Manejador de cargos";
-            this.btn_user_manager.Click += new System.EventHandler(this.btn_user_manager_Click);
+            this.btn_user_user.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_user_user.BorderRadius = 5;
+            this.btn_user_user.BorderThickness = 2;
+            this.btn_user_user.CheckedState.Parent = this.btn_user_user;
+            this.btn_user_user.CustomImages.Parent = this.btn_user_user;
+            this.btn_user_user.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_user_user.FillColor = System.Drawing.Color.Transparent;
+            this.btn_user_user.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_user_user.ForeColor = System.Drawing.Color.Cyan;
+            this.btn_user_user.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_user_user.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_user_user.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_user_user.HoverState.Parent = this.btn_user_user;
+            this.btn_user_user.Location = new System.Drawing.Point(3, 159);
+            this.btn_user_user.Name = "btn_user_user";
+            this.btn_user_user.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_user_user.ShadowDecoration.Parent = this.btn_user_user;
+            this.btn_user_user.Size = new System.Drawing.Size(365, 46);
+            this.btn_user_user.TabIndex = 0;
+            this.btn_user_user.Text = "Manejador de usuarios";
+            this.btn_user_user.Click += new System.EventHandler(this.btn_user_manager_Click);
             // 
             // btn_products
             // 
@@ -145,6 +145,7 @@
             this.btn_products.Size = new System.Drawing.Size(365, 46);
             this.btn_products.TabIndex = 1;
             this.btn_products.Text = "Manejador de productos";
+            this.btn_products.Click += new System.EventHandler(this.btn_products_Click);
             // 
             // btn_employee_manager
             // 
@@ -190,75 +191,79 @@
             this.btn_invoice_manager.Size = new System.Drawing.Size(365, 46);
             this.btn_invoice_manager.TabIndex = 5;
             this.btn_invoice_manager.Text = "Manejador de facturas";
+            this.btn_invoice_manager.Click += new System.EventHandler(this.btn_invoice_manager_Click);
             // 
-            // guna2Button1
+            // btn_product_type_manager
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.Cyan;
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Cyan;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(3, 211);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(365, 46);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Manejador de tipos de productos";
+            this.btn_product_type_manager.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_product_type_manager.BorderRadius = 5;
+            this.btn_product_type_manager.BorderThickness = 2;
+            this.btn_product_type_manager.CheckedState.Parent = this.btn_product_type_manager;
+            this.btn_product_type_manager.CustomImages.Parent = this.btn_product_type_manager;
+            this.btn_product_type_manager.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_product_type_manager.FillColor = System.Drawing.Color.Transparent;
+            this.btn_product_type_manager.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_product_type_manager.ForeColor = System.Drawing.Color.Cyan;
+            this.btn_product_type_manager.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_product_type_manager.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_product_type_manager.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_product_type_manager.HoverState.Parent = this.btn_product_type_manager;
+            this.btn_product_type_manager.Location = new System.Drawing.Point(3, 211);
+            this.btn_product_type_manager.Name = "btn_product_type_manager";
+            this.btn_product_type_manager.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_product_type_manager.ShadowDecoration.Parent = this.btn_product_type_manager;
+            this.btn_product_type_manager.Size = new System.Drawing.Size(365, 46);
+            this.btn_product_type_manager.TabIndex = 6;
+            this.btn_product_type_manager.Text = "Manejador de tipos de productos";
+            this.btn_product_type_manager.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Button2
+            // btn_branch_manager
             // 
-            this.guna2Button2.BorderColor = System.Drawing.Color.Cyan;
-            this.guna2Button2.BorderRadius = 5;
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Cyan;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(3, 263);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(365, 46);
-            this.guna2Button2.TabIndex = 7;
-            this.guna2Button2.Text = "Manejador de sucursales";
+            this.btn_branch_manager.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_branch_manager.BorderRadius = 5;
+            this.btn_branch_manager.BorderThickness = 2;
+            this.btn_branch_manager.CheckedState.Parent = this.btn_branch_manager;
+            this.btn_branch_manager.CustomImages.Parent = this.btn_branch_manager;
+            this.btn_branch_manager.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_branch_manager.FillColor = System.Drawing.Color.Transparent;
+            this.btn_branch_manager.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_branch_manager.ForeColor = System.Drawing.Color.Cyan;
+            this.btn_branch_manager.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_branch_manager.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_branch_manager.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_branch_manager.HoverState.Parent = this.btn_branch_manager;
+            this.btn_branch_manager.Location = new System.Drawing.Point(3, 263);
+            this.btn_branch_manager.Name = "btn_branch_manager";
+            this.btn_branch_manager.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_branch_manager.ShadowDecoration.Parent = this.btn_branch_manager;
+            this.btn_branch_manager.Size = new System.Drawing.Size(365, 46);
+            this.btn_branch_manager.TabIndex = 7;
+            this.btn_branch_manager.Text = "Manejador de sucursales";
+            this.btn_branch_manager.Click += new System.EventHandler(this.btn_branch_manager_Click);
             // 
-            // guna2Button3
+            // btn_position_manager
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.Cyan;
-            this.guna2Button3.BorderRadius = 5;
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Cyan;
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(3, 315);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(365, 50);
-            this.guna2Button3.TabIndex = 8;
-            this.guna2Button3.Text = "Manejador de usuarios";
+            this.btn_position_manager.BorderColor = System.Drawing.Color.Cyan;
+            this.btn_position_manager.BorderRadius = 5;
+            this.btn_position_manager.BorderThickness = 2;
+            this.btn_position_manager.CheckedState.Parent = this.btn_position_manager;
+            this.btn_position_manager.CustomImages.Parent = this.btn_position_manager;
+            this.btn_position_manager.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_position_manager.FillColor = System.Drawing.Color.Transparent;
+            this.btn_position_manager.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_position_manager.ForeColor = System.Drawing.Color.Cyan;
+            this.btn_position_manager.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_position_manager.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_position_manager.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_position_manager.HoverState.Parent = this.btn_position_manager;
+            this.btn_position_manager.Location = new System.Drawing.Point(3, 315);
+            this.btn_position_manager.Name = "btn_position_manager";
+            this.btn_position_manager.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_position_manager.ShadowDecoration.Parent = this.btn_position_manager;
+            this.btn_position_manager.Size = new System.Drawing.Size(365, 50);
+            this.btn_position_manager.TabIndex = 8;
+            this.btn_position_manager.Text = "Manejador de cargos";
+            this.btn_position_manager.Click += new System.EventHandler(this.btn_position_manager_Click);
             // 
             // AdminPanel
             // 
@@ -284,12 +289,12 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2Button btn_user_manager;
+        private Guna.UI2.WinForms.Guna2Button btn_user_user;
         private Guna.UI2.WinForms.Guna2Button btn_products;
         private Guna.UI2.WinForms.Guna2Button btn_employee_manager;
         private Guna.UI2.WinForms.Guna2Button btn_invoice_manager;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btn_product_type_manager;
+        private Guna.UI2.WinForms.Guna2Button btn_branch_manager;
+        private Guna.UI2.WinForms.Guna2Button btn_position_manager;
     }
 }
