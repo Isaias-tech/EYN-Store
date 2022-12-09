@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EYN_Store.Provider;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -87,7 +88,16 @@ namespace EYN_Store
             foreach (Form f in Application.OpenForms)
                 openForms.Add(f);
             foreach (Form f in openForms)
-                if (f.Name != "Sign_In" && f.Name != "ClientProducts" && f.Name != "ClientServices" && f.Name != "Cart" && f.Name != "GenerateInvoice" && f.Name != "AdminPanel" && f.Name != "Main_Menu") f.Close();
+                if (f.Name != "Sign_In" && f.Name != "ClientProducts" && f.Name != "Cart" && f.Name != "GenerateInvoice" && f.Name != "AdminPanel" && f.Name != "Main_Menu") f.Close();
+        }
+
+        private void btn_providers_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["ProviderManager"] as ProviderManager) != null))
+            {
+                ProviderManager pm = new ProviderManager();
+                pm.Show();
+            }
         }
     }
 }

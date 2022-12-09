@@ -117,6 +117,26 @@
     <Compile Include="Position\DB_Data_Position.cs" />
     <Compile Include="Products\DB_Data_Products.cs" />
     <Compile Include="ProductType\DB_Data_ProductType.cs" />
+    <Compile Include="Provider\AddProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\AddProvider.Designer.cs">
+      <DependentUpon>AddProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\DB_Data_Provider.cs" />
+    <Compile Include="Provider\EditProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\EditProvider.Designer.cs">
+      <DependentUpon>EditProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Provider\Provider.cs" />
+    <Compile Include="Provider\ProviderManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Provider\ProviderManager.Designer.cs">
+      <DependentUpon>ProviderManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\DB_Data_Users.cs" />
     <Compile Include="Branch\EditBranch.cs">
       <SubType>Form</SubType>
@@ -266,6 +286,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductType\EditProductType.resx">
       <DependentUpon>EditProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\AddProvider.resx">
+      <DependentUpon>AddProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\EditProvider.resx">
+      <DependentUpon>EditProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Provider\ProviderManager.resx">
+      <DependentUpon>ProviderManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
