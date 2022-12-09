@@ -223,6 +223,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EYN - Menu principal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_Menu_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_Menu_FormClosed);
             this.Load += new System.EventHandler(this.Main_Menu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.ResumeLayout(false);

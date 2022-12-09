@@ -32,8 +32,11 @@ namespace EYN_Store
 
         private void btn_user_manager_Click(object sender, EventArgs e)
         {
-            AdminPanel ap = new AdminPanel();
-            ap.Show();
+            if (!((Application.OpenForms["AdminPanel"] as AdminPanel) != null))
+            {
+                AdminPanel ap = new AdminPanel();
+                ap.Show();
+            }
         }
 
         private void Main_Menu_Load(object sender, EventArgs e)
@@ -43,26 +46,48 @@ namespace EYN_Store
 
         private void btn_products_Click(object sender, EventArgs e)
         {
-            ClientProducts cp = new ClientProducts();
-            cp.Show();
+            if (!((Application.OpenForms["ClientProducts"] as ClientProducts) != null))
+            {
+                ClientProducts cp = new ClientProducts();
+                cp.Show();
+            }
         }
 
         private void btn_services_Click(object sender, EventArgs e)
         {
-            ClientServices clientServices = new ClientServices();
-            clientServices.Show();
+            if (!((Application.OpenForms["ClientServices"] as ClientServices) != null))
+            {
+                ClientServices clientServices = new ClientServices();
+                clientServices.Show();
+            }
         }
 
         private void btn_cart_Click(object sender, EventArgs e)
         {
-            Cart cart = new Cart();
-            cart.Show();
+            if (!((Application.OpenForms["Cart"] as Cart) != null))
+            {
+                Cart cart = new Cart();
+                cart.Show();
+            }
         }
 
         private void btn_invoice_manager_Click(object sender, EventArgs e)
         {
-            GenerateInvoice generateInvoice = new GenerateInvoice();
-            generateInvoice.Show();
+            if (!((Application.OpenForms["GenerateInvoice"] as GenerateInvoice) != null))
+            {
+                GenerateInvoice generateInvoice = new GenerateInvoice();
+                generateInvoice.Show();
+            }
+        }
+
+        private void Main_Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+            foreach (Form f in openForms)
+                if (f.Name != "Sign_In") f.Close();
         }
     }
 }

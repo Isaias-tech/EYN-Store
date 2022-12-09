@@ -277,6 +277,7 @@
             this.Name = "AdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Panel de administrador";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminPanel_FormClosed);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);

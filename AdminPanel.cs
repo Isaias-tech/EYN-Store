@@ -19,44 +19,75 @@ namespace EYN_Store
 
         private void btn_user_manager_Click(object sender, EventArgs e)
         {
-            ManageUsers manageUsers = new ManageUsers();
-            manageUsers.Show();
+            if (!((Application.OpenForms["ManageUsers"] as ManageUsers) != null))
+            {
+                ManageUsers manageUsers = new ManageUsers();
+                manageUsers.Show();
+            }
         }
 
         private void btn_employee_manager_Click(object sender, EventArgs e)
         {
-            EmployeeManager em = new EmployeeManager();
-            em.Show();
+            if (!((Application.OpenForms["EmployeeManager"] as EmployeeManager) != null))
+            {
+                EmployeeManager em = new EmployeeManager();
+                em.Show();
+            }
         }
 
         private void btn_products_Click(object sender, EventArgs e)
         {
-            ProductsManager pm = new ProductsManager();
-            pm.Show();
+            if (!((Application.OpenForms["ProductsManager"] as ProductsManager) != null))
+            {
+                ProductsManager pm = new ProductsManager();
+                pm.Show();
+            }
         }
 
         private void btn_invoice_manager_Click(object sender, EventArgs e)
         {
-            InvoiceManager im = new InvoiceManager();
-            im.Show();
+            if (!((Application.OpenForms["InvoiceManager"] as InvoiceManager) != null))
+            {
+                InvoiceManager im = new InvoiceManager();
+                im.Show();
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ProductTypesManager pm = new ProductTypesManager();
-            pm.Show();
+            if (!((Application.OpenForms["ProductTypesManager"] as ProductTypesManager) != null))
+            {
+                ProductTypesManager pm = new ProductTypesManager();
+                pm.Show();
+            }
         }
 
         private void btn_branch_manager_Click(object sender, EventArgs e)
         {
-            BranchManager bm = new BranchManager();
-            bm.Show();
+            if (!((Application.OpenForms["BranchManager"] as BranchManager) != null))
+            {
+                BranchManager bm = new BranchManager();
+                bm.Show();
+            }
         }
 
         private void btn_position_manager_Click(object sender, EventArgs e)
         {
-            PositionsManager pm = new PositionsManager();
-            pm.Show();
+            if (!((Application.OpenForms["PositionsManager"] as PositionsManager) != null))
+            {
+                PositionsManager pm = new PositionsManager();
+                pm.Show();
+            }
+        }
+
+        private void AdminPanel_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            List<Form> openForms = new List<Form>();
+
+            foreach (Form f in Application.OpenForms)
+                openForms.Add(f);
+            foreach (Form f in openForms)
+                if (f.Name != "Sign_In" && f.Name != "ClientProducts" && f.Name != "ClientServices" && f.Name != "Cart" && f.Name != "GenerateInvoice" && f.Name != "AdminPanel" && f.Name != "Main_Menu") f.Close();
         }
     }
 }
