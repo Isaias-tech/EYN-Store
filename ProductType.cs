@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EYN_Store
 {
-    internal class Invoice
+    internal class ProductType
     {
     }
 }

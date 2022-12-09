@@ -55,11 +55,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBranch.Designer.cs">
+      <DependentUpon>AddBranch.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPosition.Designer.cs">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductType.Designer.cs">
+      <DependentUpon>AddProductType.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel.cs">
       <SubType>Form</SubType>
@@ -95,9 +119,35 @@
     <Compile Include="DB_Connection.cs" />
     <Compile Include="DB_Data_Branch.cs" />
     <Compile Include="DB_Data_Employee.cs" />
+    <Compile Include="DB_Data_Invoice.cs" />
     <Compile Include="DB_Data_Position.cs" />
     <Compile Include="DB_Data_Products.cs" />
+    <Compile Include="DB_Data_ProductType.cs" />
     <Compile Include="DB_Data_Users.cs" />
+    <Compile Include="EditBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBranch.Designer.cs">
+      <DependentUpon>EditBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPosition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPosition.Designer.cs">
+      <DependentUpon>EditPosition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProduct.Designer.cs">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProductType.Designer.cs">
+      <DependentUpon>EditProductType.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,12 +167,13 @@
     <Compile Include="GenerateInvoice.Designer.cs">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="Invoice.cs">
+    <Compile Include="ClientInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Invoice.Designer.cs">
-      <DependentUpon>Invoice.cs</DependentUpon>
+    <Compile Include="ClientInvoice.Designer.cs">
+      <DependentUpon>ClientInvoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Invoice.cs" />
     <Compile Include="InvoiceManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +206,7 @@
     <Compile Include="ProductsManager.Designer.cs">
       <DependentUpon>ProductsManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductType.cs" />
     <Compile Include="ProductTypesManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,8 +261,8 @@
     <EmbeddedResource Include="GenerateInvoice.resx">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Invoice.resx">
-      <DependentUpon>Invoice.cs</DependentUpon>
+    <EmbeddedResource Include="ClientInvoice.resx">
+      <DependentUpon>ClientInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InvoiceManager.resx">
       <DependentUpon>InvoiceManager.cs</DependentUpon>
