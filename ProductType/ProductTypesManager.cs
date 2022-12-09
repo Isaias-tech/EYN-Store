@@ -59,5 +59,17 @@ namespace EYN_Store
                 dgv_type.DataSource = new DB_Data_ProductType().getProductTypes();
             }
         }
+
+        private void dgv_type_DoubleClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de que desea eliminar este producto?", "¡Atención!", MessageBoxButtons.YesNo).ToString() == "Yes")
+            {
+                foreach (DataGridViewRow row in dgv_type.SelectedRows)
+                {
+                    new DB_Data_ProductType().deleteProductType(Convert.ToString(row.Cells[0].Value));
+                    dgv_type.DataSource = new DB_Data_ProductType().getProductTypes();
+                }
+            }
+        }
     }
 }

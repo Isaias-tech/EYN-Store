@@ -59,5 +59,17 @@ namespace EYN_Store
                 dgv_position.DataSource = new DB_Data_Position().getPositions();
             }
         }
+
+        private void dgv_position_DoubleClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de que desea eliminar esta posicion?", "¡Atención!", MessageBoxButtons.YesNo).ToString() == "Yes")
+            {
+                foreach (DataGridViewRow row in dgv_position.SelectedRows)
+                {
+                    new DB_Data_Position().deletePosition(Convert.ToString(row.Cells[0].Value));
+                    dgv_position.DataSource = new DB_Data_Position().getPositions();
+                }
+            }
+        }
     }
 }

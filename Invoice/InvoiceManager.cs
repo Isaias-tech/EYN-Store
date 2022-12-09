@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EYN_Store.Provider;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,18 @@ namespace EYN_Store
                     invoiceDetails.ShowDialog();
                 }
                 dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
+            }
+        }
+
+        private void dgv_invoice_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de que desea eliminar esta factura?", "¡Atención!", MessageBoxButtons.YesNo).ToString() == "Yes")
+            {
+                foreach (DataGridViewRow row in dgv_invoice.SelectedRows)
+                {
+                    new DB_Data_Invoice().deleteInvoicen(Convert.ToString(row.Cells[0].Value));
+                    dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
+                }
             }
         }
     }
