@@ -33,7 +33,7 @@
             this.txt_salary = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_description = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_add_branch = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add_position = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.guna2GradientPanel1.Controls.Add(this.txt_salary);
             this.guna2GradientPanel1.Controls.Add(this.txt_description);
             this.guna2GradientPanel1.Controls.Add(this.txt_name);
-            this.guna2GradientPanel1.Controls.Add(this.btn_add_branch);
+            this.guna2GradientPanel1.Controls.Add(this.btn_add_position);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.label2);
@@ -139,27 +139,28 @@
             this.txt_name.Size = new System.Drawing.Size(260, 43);
             this.txt_name.TabIndex = 22;
             // 
-            // btn_add_branch
+            // btn_add_position
             // 
-            this.btn_add_branch.BackColor = System.Drawing.Color.Transparent;
-            this.btn_add_branch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.BorderRadius = 5;
-            this.btn_add_branch.CheckedState.Parent = this.btn_add_branch;
-            this.btn_add_branch.CustomImages.Parent = this.btn_add_branch;
-            this.btn_add_branch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_branch.ForeColor = System.Drawing.Color.White;
-            this.btn_add_branch.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_add_branch.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.btn_add_branch.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_add_branch.HoverState.Parent = this.btn_add_branch;
-            this.btn_add_branch.Location = new System.Drawing.Point(326, 237);
-            this.btn_add_branch.Name = "btn_add_branch";
-            this.btn_add_branch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.ShadowDecoration.Parent = this.btn_add_branch;
-            this.btn_add_branch.Size = new System.Drawing.Size(479, 45);
-            this.btn_add_branch.TabIndex = 6;
-            this.btn_add_branch.Text = "Agregar cargo";
+            this.btn_add_position.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add_position.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_add_position.BorderRadius = 5;
+            this.btn_add_position.CheckedState.Parent = this.btn_add_position;
+            this.btn_add_position.CustomImages.Parent = this.btn_add_position;
+            this.btn_add_position.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_add_position.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_position.ForeColor = System.Drawing.Color.White;
+            this.btn_add_position.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_add_position.HoverState.FillColor = System.Drawing.Color.Navy;
+            this.btn_add_position.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_add_position.HoverState.Parent = this.btn_add_position;
+            this.btn_add_position.Location = new System.Drawing.Point(326, 237);
+            this.btn_add_position.Name = "btn_add_position";
+            this.btn_add_position.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_add_position.ShadowDecoration.Parent = this.btn_add_position;
+            this.btn_add_position.Size = new System.Drawing.Size(479, 45);
+            this.btn_add_position.TabIndex = 6;
+            this.btn_add_position.Text = "Agregar cargo";
+            this.btn_add_position.Click += new System.EventHandler(this.btn_add_position_Click);
             // 
             // label1
             // 
@@ -233,7 +234,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_salary;
         private Guna.UI2.WinForms.Guna2TextBox txt_description;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
-        private Guna.UI2.WinForms.Guna2Button btn_add_branch;
+        private Guna.UI2.WinForms.Guna2Button btn_add_position;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;

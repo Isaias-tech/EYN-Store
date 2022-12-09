@@ -110,12 +110,6 @@
     <Compile Include="Products\ClientProducts.Designer.cs">
       <DependentUpon>ClientProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products\ClientServices.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Products\ClientServices.Designer.cs">
-      <DependentUpon>ClientServices.cs</DependentUpon>
-    </Compile>
     <Compile Include="DB_Connection.cs" />
     <Compile Include="Branch\DB_Data_Branch.cs" />
     <Compile Include="Employee\DB_Data_Employee.cs" />
@@ -263,9 +257,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Products\ClientProducts.resx">
       <DependentUpon>ClientProducts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Products\ClientServices.resx">
-      <DependentUpon>ClientServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products\EditProduct.resx">
       <DependentUpon>EditProduct.cs</DependentUpon>

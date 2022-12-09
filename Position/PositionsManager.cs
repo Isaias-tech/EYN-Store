@@ -51,7 +51,8 @@ namespace EYN_Store
         {
             if (!((Application.OpenForms["EditPosition"] as EditPosition) != null))
             {
-                using (EditPosition ab = new EditPosition())
+                var cells = dgv_position.SelectedRows[0].Cells;
+                using (EditPosition ab = new EditPosition(Convert.ToString(cells[0].Value), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[3].Value)))
                 {
                     ab.ShowDialog();
                 }

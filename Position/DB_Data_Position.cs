@@ -74,7 +74,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                ssh_DB_Connection.SendQueryToDB($"UPDATE Positions SET P_Name='{position.P_Name}', P_Description'={position.P_Description}', P_Salary={position.P_Salary} WHERE ID={id};");
+                ssh_DB_Connection.SendQueryToDB($"UPDATE Positions SET P_Name='{position.P_Name}', P_Description='{position.P_Description}', P_Salary={position.P_Salary} WHERE ID={id};");
                 MessageBox.Show("La posicion ha sido actualizada correctamente.");
             }
             catch

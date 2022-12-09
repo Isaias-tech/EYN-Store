@@ -55,11 +55,6 @@ namespace EYN_Store
 
         private void btn_services_Click(object sender, EventArgs e)
         {
-            if (!((Application.OpenForms["ClientServices"] as ClientServices) != null))
-            {
-                ClientServices clientServices = new ClientServices();
-                clientServices.Show();
-            }
         }
 
         private void btn_cart_Click(object sender, EventArgs e)

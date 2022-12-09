@@ -32,7 +32,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.txt_description = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_add_branch = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_edit_type = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,7 +44,7 @@
             // 
             this.guna2GradientPanel1.Controls.Add(this.txt_description);
             this.guna2GradientPanel1.Controls.Add(this.txt_name);
-            this.guna2GradientPanel1.Controls.Add(this.btn_add_branch);
+            this.guna2GradientPanel1.Controls.Add(this.btn_edit_type);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
@@ -109,27 +109,28 @@
             this.txt_name.Size = new System.Drawing.Size(260, 43);
             this.txt_name.TabIndex = 22;
             // 
-            // btn_add_branch
+            // btn_edit_type
             // 
-            this.btn_add_branch.BackColor = System.Drawing.Color.Transparent;
-            this.btn_add_branch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.BorderRadius = 5;
-            this.btn_add_branch.CheckedState.Parent = this.btn_add_branch;
-            this.btn_add_branch.CustomImages.Parent = this.btn_add_branch;
-            this.btn_add_branch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_branch.ForeColor = System.Drawing.Color.White;
-            this.btn_add_branch.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_add_branch.HoverState.FillColor = System.Drawing.Color.Navy;
-            this.btn_add_branch.HoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_add_branch.HoverState.Parent = this.btn_add_branch;
-            this.btn_add_branch.Location = new System.Drawing.Point(251, 153);
-            this.btn_add_branch.Name = "btn_add_branch";
-            this.btn_add_branch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btn_add_branch.ShadowDecoration.Parent = this.btn_add_branch;
-            this.btn_add_branch.Size = new System.Drawing.Size(479, 45);
-            this.btn_add_branch.TabIndex = 6;
-            this.btn_add_branch.Text = "Actualizar el tipo de producto";
+            this.btn_edit_type.BackColor = System.Drawing.Color.Transparent;
+            this.btn_edit_type.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_edit_type.BorderRadius = 5;
+            this.btn_edit_type.CheckedState.Parent = this.btn_edit_type;
+            this.btn_edit_type.CustomImages.Parent = this.btn_edit_type;
+            this.btn_edit_type.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_edit_type.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit_type.ForeColor = System.Drawing.Color.White;
+            this.btn_edit_type.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_edit_type.HoverState.FillColor = System.Drawing.Color.Navy;
+            this.btn_edit_type.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_edit_type.HoverState.Parent = this.btn_edit_type;
+            this.btn_edit_type.Location = new System.Drawing.Point(251, 153);
+            this.btn_edit_type.Name = "btn_edit_type";
+            this.btn_edit_type.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_edit_type.ShadowDecoration.Parent = this.btn_edit_type;
+            this.btn_edit_type.Size = new System.Drawing.Size(479, 45);
+            this.btn_edit_type.TabIndex = 6;
+            this.btn_edit_type.Text = "Actualizar el tipo de producto";
+            this.btn_edit_type.Click += new System.EventHandler(this.btn_edit_type_Click);
             // 
             // label1
             // 
@@ -190,7 +191,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2TextBox txt_description;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
-        private Guna.UI2.WinForms.Guna2Button btn_add_branch;
+        private Guna.UI2.WinForms.Guna2Button btn_edit_type;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
