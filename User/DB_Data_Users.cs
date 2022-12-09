@@ -49,7 +49,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Users WHERE {by} LIKE '%{value}%';");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`, `U_Name` AS `Nombre/s`, `U_LastName` AS `Apellido/s`, `U_Email` AS `Email`, `U_PhoneNumber` AS `Numero de telefono`, `U_UserName` AS `Nombre de usuario`, `U_IsAdmin` AS `Es Administrador`, `U_Status` AS `Estado` FROM Users WHERE {by} LIKE '%{value}%';");
             }
             catch
             {
@@ -63,7 +63,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Users WHERE ID={ID};");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`, `U_Name` AS `Nombre/s`, `U_LastName` AS `Apellido/s`, `U_Email` AS `Email`, `U_PhoneNumber` AS `Numero de telefono`, `U_UserName` AS `Nombre de usuario`, `U_IsAdmin` AS `Es Administrador`, `U_Status` AS `Estado` FROM Users WHERE ID={ID};");
             }
             catch
             {

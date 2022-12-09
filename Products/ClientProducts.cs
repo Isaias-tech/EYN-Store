@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void ClientProducts_Load(object sender, EventArgs e)
+        {
+            dgv_products.DataSource = new DB_Data_Products().getProducts();   
+        }
     }
 }
