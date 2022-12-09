@@ -174,6 +174,8 @@
             // 
             // dgv_invoice
             // 
+            this.dgv_invoice.AllowUserToAddRows = false;
+            this.dgv_invoice.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_invoice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_invoice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -203,7 +205,9 @@
             this.dgv_invoice.EnableHeadersVisualStyles = false;
             this.dgv_invoice.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_invoice.Location = new System.Drawing.Point(0, 0);
+            this.dgv_invoice.MultiSelect = false;
             this.dgv_invoice.Name = "dgv_invoice";
+            this.dgv_invoice.ReadOnly = true;
             this.dgv_invoice.RowHeadersVisible = false;
             this.dgv_invoice.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_invoice.Size = new System.Drawing.Size(901, 413);
@@ -222,7 +226,7 @@
             this.dgv_invoice.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_invoice.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_invoice.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgv_invoice.ThemeStyle.ReadOnly = false;
+            this.dgv_invoice.ThemeStyle.ReadOnly = true;
             this.dgv_invoice.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_invoice.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_invoice.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);

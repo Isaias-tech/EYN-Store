@@ -52,11 +52,23 @@ namespace EYN_Store
             if (!((Application.OpenForms["EditBranch"] as EditBranch) != null))
             {
                 var cells = dgv_branch.SelectedRows[0].Cells;
-                using (EditBranch eb = new EditBranch(Convert.ToString(cells[0]), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[3].Value), Convert.ToString(cells[4].Value)))
+                using (EditBranch eb = new EditBranch(Convert.ToString(cells[0].Value), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[4].Value), Convert.ToString(cells[3].Value)))
                 {
                     eb.ShowDialog();
                 }
                 dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
+            }
+        }
+
+        private void dgv_branch_DoubleClick(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro de que desea eliminar esta sucursal?", "¡Atención!", MessageBoxButtons.YesNo).ToString() == "Yes")
+            {
+                foreach (DataGridViewRow row in dgv_branch.SelectedRows)
+                {
+                    new DB_Data_Branch().deleteBranch(Convert.ToString(row.Cells[0].Value));
+                    dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
+                }
             }
         }
     }

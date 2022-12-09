@@ -244,6 +244,7 @@
             this.dgv_branch.ThemeStyle.RowsStyle.Height = 22;
             this.dgv_branch.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_branch.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_branch.DoubleClick += new System.EventHandler(this.dgv_branch_DoubleClick);
             // 
             // BranchManager
             // 

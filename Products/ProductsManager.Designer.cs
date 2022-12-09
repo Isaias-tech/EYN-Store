@@ -196,6 +196,8 @@
             // 
             // dgv_product
             // 
+            this.dgv_product.AllowUserToAddRows = false;
+            this.dgv_product.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_product.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_product.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -225,6 +227,7 @@
             this.dgv_product.EnableHeadersVisualStyles = false;
             this.dgv_product.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_product.Location = new System.Drawing.Point(0, 0);
+            this.dgv_product.MultiSelect = false;
             this.dgv_product.Name = "dgv_product";
             this.dgv_product.ReadOnly = true;
             this.dgv_product.RowHeadersVisible = false;

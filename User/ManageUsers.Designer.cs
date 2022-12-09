@@ -95,6 +95,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_data.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_data.ColumnHeadersHeight = 25;
             this.dgv_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -128,7 +129,7 @@
             this.dgv_data.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgv_data.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_data.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_data.ThemeStyle.HeaderStyle.Height = 23;
+            this.dgv_data.ThemeStyle.HeaderStyle.Height = 25;
             this.dgv_data.ThemeStyle.ReadOnly = true;
             this.dgv_data.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_data.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

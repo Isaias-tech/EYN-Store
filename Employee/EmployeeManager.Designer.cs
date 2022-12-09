@@ -208,6 +208,8 @@
             // 
             // dgv_employee
             // 
+            this.dgv_employee.AllowUserToAddRows = false;
+            this.dgv_employee.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_employee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_employee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
