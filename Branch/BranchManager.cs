@@ -51,7 +51,8 @@ namespace EYN_Store
         {
             if (!((Application.OpenForms["EditBranch"] as EditBranch) != null))
             {
-                using (EditBranch eb = new EditBranch())
+                var cells = dgv_branch.SelectedRows[0].Cells;
+                using (EditBranch eb = new EditBranch(Convert.ToString(cells[0]), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[3].Value), Convert.ToString(cells[4].Value)))
                 {
                     eb.ShowDialog();
                 }

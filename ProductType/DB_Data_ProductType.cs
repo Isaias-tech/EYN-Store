@@ -40,43 +40,46 @@ namespace EYN_Store
             return new DataTable();
         }
 
-        public DataTable addProductType(Products Product)
+        public void addProductType(ProductType pt)
         {
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO ProductTypes (PT_Name, PT_Description) VALUES ('{pt.PT_Name}', '{pt.PT_Description}');");
+                MessageBox.Show("El tipo de producto ha sido agregado correctamente.");
             }
             catch
             {
                 MessageBox.Show("Ha ocurrido un error al intentar agregar el tipo.");
             }
-            return new DataTable();
         }
 
-        public DataTable updateProductType(string id, Products Product)
+        public void updateProductType(string id, ProductType pt)
         {
             try
             {
-                return getProductTypes();
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"UPDATE ProductTypes SET PT_Name='{pt.PT_Name}', PT_Description='{pt.PT_Description}' WHERE ID={id};");
+                MessageBox.Show("El tipo de producto ha sido actualizado correctamente.");
             }
             catch
             {
                 MessageBox.Show("Ha ocurrido un error al intentar update el tipo.");
             }
-            return new DataTable();
         }
 
-        public DataTable deleteProductType(string ID)
+        public void deleteProductType(string ID)
         {
             try
             {
-                return getProductTypes();
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"DELETE FROM ProductTypes WHERE ID={ID}");
+                MessageBox.Show("El tipo de producto ha sido eliminado correctamente.");
             }
             catch
             {
                 MessageBox.Show("Ha ocurrido un error al intentar eliminar el tipo.");
             }
-            return new DataTable();
         }
     }
 }

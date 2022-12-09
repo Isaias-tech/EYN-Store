@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace EYN_Store
 {
@@ -54,19 +55,46 @@ namespace EYN_Store
             return new DataTable();
         }
 
-        public DataTable addPosition(Employee employee)
+        public void addPosition(Position position)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Positions (P_Name, P_Description, P_Salary) VALUES ('{position.P_Name}', '{position.P_Description}', {position.P_Salary});");
+                MessageBox.Show("La posicion ha sido agregada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar agregar la posicion.");
+            }
         }
 
-        public DataTable updatePosition(string id, Employee employee)
+        public void updatePosition(string id, Position position)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"UPDATE Positions SET P_Name='{position.P_Name}', P_Description'={position.P_Description}', P_Salary={position.P_Salary} WHERE ID={id};");
+                MessageBox.Show("La posicion ha sido actualizada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar actualizar la posicion.");
+            }
         }
 
-        public DataTable deletePosition(string id)
+        public void deletePosition(string id)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"DELETE FROM Positions WHERE ID={id}");
+                MessageBox.Show("La posicion ha sido eliminada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar eliminar la posicion.");
+            }
         }
     }
 }

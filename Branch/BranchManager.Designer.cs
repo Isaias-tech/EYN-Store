@@ -184,6 +184,8 @@
             // 
             // dgv_branch
             // 
+            this.dgv_branch.AllowUserToAddRows = false;
+            this.dgv_branch.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_branch.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_branch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -213,7 +215,9 @@
             this.dgv_branch.EnableHeadersVisualStyles = false;
             this.dgv_branch.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_branch.Location = new System.Drawing.Point(0, 36);
+            this.dgv_branch.MultiSelect = false;
             this.dgv_branch.Name = "dgv_branch";
+            this.dgv_branch.ReadOnly = true;
             this.dgv_branch.RowHeadersVisible = false;
             this.dgv_branch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_branch.Size = new System.Drawing.Size(907, 414);
@@ -232,7 +236,7 @@
             this.dgv_branch.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_branch.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_branch.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgv_branch.ThemeStyle.ReadOnly = false;
+            this.dgv_branch.ThemeStyle.ReadOnly = true;
             this.dgv_branch.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_branch.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_branch.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);

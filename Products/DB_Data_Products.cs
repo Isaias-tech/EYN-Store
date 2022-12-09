@@ -40,43 +40,46 @@ namespace EYN_Store
             return new DataTable();
         }
 
-        public DataTable addProduct(Products Product)
+        public void addProduct(Products product)
         {
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Products (P_Name, P_Description, ID_Type, ID_Provider, ID_Branch, P_Cost, P_Price, P_Expiration_Date) VALUES ('{product.P_Name}', '{product.P_Description}', {product.P_ID_Type}, {product.P_ID_Provider}, {product.P_ID_Branch}, {product.P_Cost}, {product.P_Price}, {product.P_ExpirationDate});");
+                MessageBox.Show("El producto ha sido agregado correctamente.");
             }
             catch
             {
                 MessageBox.Show("Ha ocurrido un error al intentar agregar el producto.");
             }
-            return new DataTable();
         }
 
-        public DataTable updateProduct(string id, Products Product)
+        public void updateProduct(string id, Products product)
         {
             try
             {
-                return getProducts();
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"UPDATE Products SET P_Name='{product.P_Name}', P_Description='{product.P_Description}', ID_Type={product.P_ID_Type}, ID_Provider={product.P_ID_Provider}, ID_Branch={product.P_ID_Branch}, P_Cost={product.P_Cost}, P_Price={product.P_Price}, P_Expiration_Date='{product.P_ExpirationDate}' WHERE ID={id};");
+                MessageBox.Show("El producto ha sido actualizado correctamente.");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar update el producto.");
+                MessageBox.Show("Ha ocurrido un error al intentar actualizar el producto.");
             }
-            return new DataTable();
         }
 
-        public DataTable deleteProduct(string ID)
+        public void deleteProduct(string ID)
         {
             try
             {
-                return getProducts();
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"DELETE FROM Products WHERE ID={ID};");
+                MessageBox.Show("El producto ha sido eliminado correctamente.");
             }
             catch
             {
                 MessageBox.Show("Ha ocurrido un error al intentar eliminar el producto.");
             }
-            return new DataTable();
         }
     }
 }

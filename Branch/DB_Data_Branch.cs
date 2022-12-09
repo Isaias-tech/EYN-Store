@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace EYN_Store
 {
@@ -54,19 +55,46 @@ namespace EYN_Store
             return new DataTable();
         }
 
-        public DataTable addBranch(Employee employee)
+        public void addBranch(Branch branch)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Branchs (B_Name, B_Description, B_Direction, B_Phone) VALUES ('{branch.B_Name}', '{branch.B_Description}', '{branch.B_Direction}', '{branch.B_Phone}')");
+                MessageBox.Show("La sucursal ha sido agregada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar agregar el sucursal.");
+            }
         }
 
-        public DataTable updateBranch(string id, Employee employee)
+        public void updateBranch(string id, Branch branch)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"UPDATE Branchs Set B_Name='{branch.B_Name}', B_Description='{branch.B_Description}', B_Direction='{branch.B_Direction}', B_Phone='{branch.B_Phone}' WHERE ID={id};");
+                MessageBox.Show("La sucursal ha sido actualizada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar actualizar el sucursal.");
+            }
         }
 
-        public DataTable deleteBranch(string id)
+        public void deleteBranch(string id)
         {
-            return new DataTable();
+            try
+            {
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"DELETE FROM Branchs WHERE ID={id};");
+                MessageBox.Show("La sucursal ha sido eliminada correctamente.");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar eliminar el sucursal.");
+            }
         }
     }
 }
