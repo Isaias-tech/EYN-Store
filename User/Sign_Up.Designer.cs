@@ -321,7 +321,7 @@
             this.btn_sign_up.ShadowDecoration.Parent = this.btn_sign_up;
             this.btn_sign_up.Size = new System.Drawing.Size(479, 45);
             this.btn_sign_up.TabIndex = 6;
-            this.btn_sign_up.Text = "Registrarme";
+            this.btn_sign_up.Text = "Agregar usuario";
             this.btn_sign_up.Click += new System.EventHandler(this.btn_sign_up_Click_1);
             // 
             // pictureBox1
@@ -347,7 +347,7 @@
             this.MaximizeBox = false;
             this.Name = "Sign_Up";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Registro";
+            this.Text = "Admin EYN -  Agregar usuario";
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

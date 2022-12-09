@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void InvoiceManager_Load(object sender, EventArgs e)
+        {
+            dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
+        }
     }
 }

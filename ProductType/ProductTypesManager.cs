@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void ProductTypesManager_Load(object sender, EventArgs e)
+        {
+            dgv_type.DataSource = new DB_Data_ProductType().getProductTypes();
+        }
     }
 }

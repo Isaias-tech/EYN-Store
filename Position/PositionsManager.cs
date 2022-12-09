@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void PositionsManager_Load(object sender, EventArgs e)
+        {
+            dgv_position.DataSource = new DB_Data_Position().getPositions();
+        }
     }
 }

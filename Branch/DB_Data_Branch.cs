@@ -17,11 +17,11 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Branchs WHERE {by} LIKE '%{value}%';");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado FROM Branchs WHERE {by} LIKE '%{value}%';");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener la rama.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener la sucursal.");
             }
             return new DataTable();
         }
@@ -31,11 +31,11 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Branchs WHERE ID={ID};");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado FROM Branchs WHERE ID={ID};");
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener la rama.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener la sucursal.");
             }
             return new DataTable();
         }
@@ -49,7 +49,7 @@ namespace EYN_Store
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener los usuario.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener las sucursales.");
             }
             return new DataTable();
         }

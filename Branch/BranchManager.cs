@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void BranchManager_Load(object sender, EventArgs e)
+        {
+            dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
+        }
     }
 }

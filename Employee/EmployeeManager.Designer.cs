@@ -278,7 +278,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EmployeeManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manejador de empleados";
+            this.Text = "Admin EYN -  Manejador de empleados";
             this.Load += new System.EventHandler(this.EmployeeManager_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

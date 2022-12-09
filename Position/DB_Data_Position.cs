@@ -12,13 +12,12 @@ namespace EYN_Store
     {
         public DB_Data_Position() { }
 
-
         public DataTable getPositionBy(string by, string value)
         {
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Positions WHERE {by} LIKE '%{value}%';");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`, `P_Name` AS `Nombre`, `P_Description` AS `Descripción`, `P_Salary` AS `Salario`,`P_Status` AS `Estado` FROM Positions WHERE {by} LIKE '%{value}%';");
             }
             catch
             {
@@ -32,7 +31,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Positions WHERE ID={ID};");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`, `P_Name` AS `Nombre`, `P_Description` AS `Descripción`, `P_Salary` AS `Salario`,`P_Status` AS `Estado` FROM Positions WHERE ID={ID};");
             }
             catch
             {

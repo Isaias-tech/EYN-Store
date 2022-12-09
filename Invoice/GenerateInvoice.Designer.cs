@@ -39,7 +39,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GenerateInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "GenerateInvoice";
+            this.Text = "EYN -  Generar factura";
             this.ResumeLayout(false);
 
         }

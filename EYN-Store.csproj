@@ -234,6 +234,12 @@
       <DependentUpon>SueldoNeto_Empleado.cs</DependentUpon>
     </Compile>
     <Compile Include="User\User.cs" />
+    <EmbeddedResource Include="Branch\AddBranch.resx">
+      <DependentUpon>AddBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch\EditBranch.resx">
+      <DependentUpon>EditBranch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,11 +252,29 @@
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Position\AddPosition.resx">
+      <DependentUpon>AddPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Position\EditPosition.resx">
+      <DependentUpon>EditPosition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Products\ClientProducts.resx">
       <DependentUpon>ClientProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products\ClientServices.resx">
       <DependentUpon>ClientServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\EditProduct.resx">
+      <DependentUpon>EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductType\AddProductType.resx">
+      <DependentUpon>AddProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductType\EditProductType.resx">
+      <DependentUpon>EditProductType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>

@@ -33,10 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductTypesManager));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dgv_type = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -55,24 +55,14 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(800, 35);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
-            // guna2GradientPanel2
+            // guna2GradientPanel5
             // 
-            this.guna2GradientPanel2.Controls.Add(this.dgv_type);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 35);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(800, 415);
-            this.guna2GradientPanel2.TabIndex = 1;
-            // 
-            // guna2GradientPanel3
-            // 
-            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(200, 35);
-            this.guna2GradientPanel3.TabIndex = 2;
+            this.guna2GradientPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(200, 0);
+            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
+            this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(400, 35);
+            this.guna2GradientPanel5.TabIndex = 4;
             // 
             // guna2GradientPanel4
             // 
@@ -83,14 +73,24 @@
             this.guna2GradientPanel4.Size = new System.Drawing.Size(200, 35);
             this.guna2GradientPanel4.TabIndex = 3;
             // 
-            // guna2GradientPanel5
+            // guna2GradientPanel3
             // 
-            this.guna2GradientPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(200, 0);
-            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
-            this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(400, 35);
-            this.guna2GradientPanel5.TabIndex = 4;
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(200, 35);
+            this.guna2GradientPanel3.TabIndex = 2;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.dgv_type);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 35);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(800, 415);
+            this.guna2GradientPanel2.TabIndex = 1;
             // 
             // dgv_type
             // 
@@ -161,7 +161,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProductTypesManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ProductTypesManager";
+            this.Text = "Admin EYN -  Manejador de tipos de producto";
+            this.Load += new System.EventHandler(this.ProductTypesManager_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_type)).EndInit();

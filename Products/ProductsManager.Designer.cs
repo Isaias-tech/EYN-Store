@@ -225,7 +225,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProductsManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Manejador de productos";
+            this.Text = "Admin EYN -  Manejador de productos";
             this.Load += new System.EventHandler(this.ProductsManager_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel5.ResumeLayout(false);

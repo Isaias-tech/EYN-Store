@@ -434,7 +434,7 @@ namespace EYN_Store
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "SueldoNeto_Empleado";
-            this.Text = "Detalles de empleado";
+            this.Text = "Admin EYN -  Detalles de empleado";
             this.Load += new System.EventHandler(this.SueldoNeto_Empleado_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
