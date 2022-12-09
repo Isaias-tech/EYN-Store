@@ -55,34 +55,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddBranch.cs">
+    <Compile Include="Branch\AddBranch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddBranch.Designer.cs">
+    <Compile Include="Branch\AddBranch.Designer.cs">
       <DependentUpon>AddBranch.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddEmployee.cs">
+    <Compile Include="Employee\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEmployee.Designer.cs">
+    <Compile Include="Employee\AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPosition.cs">
+    <Compile Include="Position\AddPosition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPosition.Designer.cs">
+    <Compile Include="Position\AddPosition.Designer.cs">
       <DependentUpon>AddPosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddProduct.cs">
+    <Compile Include="Products\AddProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddProduct.Designer.cs">
+    <Compile Include="Products\AddProduct.Designer.cs">
       <DependentUpon>AddProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddProductType.cs">
+    <Compile Include="ProductType\AddProductType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddProductType.Designer.cs">
+    <Compile Include="ProductType\AddProductType.Designer.cs">
       <DependentUpon>AddProductType.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel.cs">
@@ -91,11 +91,11 @@
     <Compile Include="AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Branch.cs" />
-    <Compile Include="BranchManager.cs">
+    <Compile Include="Branch\Branch.cs" />
+    <Compile Include="Branch\BranchManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BranchManager.Designer.cs">
+    <Compile Include="Branch\BranchManager.Designer.cs">
       <DependentUpon>BranchManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Cart.cs">
@@ -104,80 +104,80 @@
     <Compile Include="Cart.Designer.cs">
       <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientProducts.cs">
+    <Compile Include="Products\ClientProducts.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientProducts.Designer.cs">
+    <Compile Include="Products\ClientProducts.Designer.cs">
       <DependentUpon>ClientProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientServices.cs">
+    <Compile Include="Products\ClientServices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientServices.Designer.cs">
+    <Compile Include="Products\ClientServices.Designer.cs">
       <DependentUpon>ClientServices.cs</DependentUpon>
     </Compile>
     <Compile Include="DB_Connection.cs" />
-    <Compile Include="DB_Data_Branch.cs" />
-    <Compile Include="DB_Data_Employee.cs" />
-    <Compile Include="DB_Data_Invoice.cs" />
-    <Compile Include="DB_Data_Position.cs" />
-    <Compile Include="DB_Data_Products.cs" />
-    <Compile Include="DB_Data_ProductType.cs" />
-    <Compile Include="DB_Data_Users.cs" />
-    <Compile Include="EditBranch.cs">
+    <Compile Include="Branch\DB_Data_Branch.cs" />
+    <Compile Include="Employee\DB_Data_Employee.cs" />
+    <Compile Include="Invoice\DB_Data_Invoice.cs" />
+    <Compile Include="Position\DB_Data_Position.cs" />
+    <Compile Include="Products\DB_Data_Products.cs" />
+    <Compile Include="ProductType\DB_Data_ProductType.cs" />
+    <Compile Include="User\DB_Data_Users.cs" />
+    <Compile Include="Branch\EditBranch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditBranch.Designer.cs">
+    <Compile Include="Branch\EditBranch.Designer.cs">
       <DependentUpon>EditBranch.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditPosition.cs">
+    <Compile Include="Position\EditPosition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditPosition.Designer.cs">
+    <Compile Include="Position\EditPosition.Designer.cs">
       <DependentUpon>EditPosition.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditProduct.cs">
+    <Compile Include="Products\EditProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditProduct.Designer.cs">
+    <Compile Include="Products\EditProduct.Designer.cs">
       <DependentUpon>EditProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditProductType.cs">
+    <Compile Include="ProductType\EditProductType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditProductType.Designer.cs">
+    <Compile Include="ProductType\EditProductType.Designer.cs">
       <DependentUpon>EditProductType.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditUser.cs">
+    <Compile Include="User\EditUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditUser.Designer.cs">
+    <Compile Include="User\EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeManager.cs">
+    <Compile Include="Employee\Employee.cs" />
+    <Compile Include="Employee\EmployeeManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeManager.Designer.cs">
+    <Compile Include="Employee\EmployeeManager.Designer.cs">
       <DependentUpon>EmployeeManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenerateInvoice.cs">
+    <Compile Include="Invoice\GenerateInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenerateInvoice.Designer.cs">
+    <Compile Include="Invoice\GenerateInvoice.Designer.cs">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientInvoice.cs">
+    <Compile Include="Invoice\ClientInvoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientInvoice.Designer.cs">
+    <Compile Include="Invoice\ClientInvoice.Designer.cs">
       <DependentUpon>ClientInvoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="Invoice.cs" />
-    <Compile Include="InvoiceManager.cs">
+    <Compile Include="Invoice\Invoice.cs" />
+    <Compile Include="Invoice\InvoiceManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InvoiceManager.Designer.cs">
+    <Compile Include="Invoice\InvoiceManager.Designer.cs">
       <DependentUpon>InvoiceManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Menu.cs">
@@ -186,31 +186,31 @@
     <Compile Include="Main_Menu.Designer.cs">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageUsers.cs">
+    <Compile Include="User\ManageUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageUsers.Designer.cs">
+    <Compile Include="User\ManageUsers.Designer.cs">
       <DependentUpon>ManageUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Position.cs" />
-    <Compile Include="PositionsManager.cs">
+    <Compile Include="Position\Position.cs" />
+    <Compile Include="Position\PositionsManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PositionsManager.Designer.cs">
+    <Compile Include="Position\PositionsManager.Designer.cs">
       <DependentUpon>PositionsManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs" />
-    <Compile Include="ProductsManager.cs">
+    <Compile Include="Products\Products.cs" />
+    <Compile Include="Products\ProductsManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductsManager.Designer.cs">
+    <Compile Include="Products\ProductsManager.Designer.cs">
       <DependentUpon>ProductsManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductType.cs" />
-    <Compile Include="ProductTypesManager.cs">
+    <Compile Include="ProductType\ProductType.cs" />
+    <Compile Include="ProductType\ProductTypesManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductTypesManager.Designer.cs">
+    <Compile Include="ProductType\ProductTypesManager.Designer.cs">
       <DependentUpon>ProductTypesManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -221,65 +221,65 @@
     <Compile Include="Sign_In.Designer.cs">
       <DependentUpon>Sign_In.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sign_Up.cs">
+    <Compile Include="User\Sign_Up.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign_Up.Designer.cs">
+    <Compile Include="User\Sign_Up.Designer.cs">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </Compile>
-    <Compile Include="SueldoNeto_Empleado.cs">
+    <Compile Include="Employee\SueldoNeto_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SueldoNeto_Empleado.Designer.cs">
+    <Compile Include="Employee\SueldoNeto_Empleado.Designer.cs">
       <DependentUpon>SueldoNeto_Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
-    <EmbeddedResource Include="AddEmployee.resx">
+    <Compile Include="User\User.cs" />
+    <EmbeddedResource Include="Employee\AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BranchManager.resx">
+    <EmbeddedResource Include="Branch\BranchManager.resx">
       <DependentUpon>BranchManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientProducts.resx">
+    <EmbeddedResource Include="Products\ClientProducts.resx">
       <DependentUpon>ClientProducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientServices.resx">
+    <EmbeddedResource Include="Products\ClientServices.resx">
       <DependentUpon>ClientServices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditUser.resx">
+    <EmbeddedResource Include="User\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeManager.resx">
+    <EmbeddedResource Include="Employee\EmployeeManager.resx">
       <DependentUpon>EmployeeManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GenerateInvoice.resx">
+    <EmbeddedResource Include="Invoice\GenerateInvoice.resx">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientInvoice.resx">
+    <EmbeddedResource Include="Invoice\ClientInvoice.resx">
       <DependentUpon>ClientInvoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InvoiceManager.resx">
+    <EmbeddedResource Include="Invoice\InvoiceManager.resx">
       <DependentUpon>InvoiceManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Menu.resx">
       <DependentUpon>Main_Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageUsers.resx">
+    <EmbeddedResource Include="User\ManageUsers.resx">
       <DependentUpon>ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PositionsManager.resx">
+    <EmbeddedResource Include="Position\PositionsManager.resx">
       <DependentUpon>PositionsManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductsManager.resx">
+    <EmbeddedResource Include="Products\ProductsManager.resx">
       <DependentUpon>ProductsManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductTypesManager.resx">
+    <EmbeddedResource Include="ProductType\ProductTypesManager.resx">
       <DependentUpon>ProductTypesManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -295,10 +295,10 @@
     <EmbeddedResource Include="Sign_In.resx">
       <DependentUpon>Sign_In.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sign_Up.resx">
+    <EmbeddedResource Include="User\Sign_Up.resx">
       <DependentUpon>Sign_Up.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SueldoNeto_Empleado.resx">
+    <EmbeddedResource Include="Employee\SueldoNeto_Empleado.resx">
       <DependentUpon>SueldoNeto_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -332,5 +332,6 @@
   <ItemGroup>
     <None Include="Resources\logo EYN2.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
