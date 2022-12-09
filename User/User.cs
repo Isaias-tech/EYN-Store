@@ -20,6 +20,25 @@ namespace EYN_Store
 
         public User () { }
 
+        public User(string name, string lastName, string email, string phoneNumber, string userName)
+        {
+            Name = name;
+            LastName = lastName;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            UserName = userName;
+        }
+
+        public User(int iD, string name, string lastName, string email, string phoneNumber, string userName)
+        {
+            ID = iD;
+            Name = name;
+            LastName = lastName;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            UserName = userName;
+        }
+
         public User(string name, string lastName, string password, string email, string phoneNumber, string userName)
         {
             Name = name;

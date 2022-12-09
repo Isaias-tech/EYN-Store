@@ -34,7 +34,6 @@
             this.txt_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_phone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txt_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_lastname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_name = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
@@ -55,7 +53,6 @@
             this.guna2GradientPanel1.Controls.Add(this.txt_username);
             this.guna2GradientPanel1.Controls.Add(this.txt_phone);
             this.guna2GradientPanel1.Controls.Add(this.txt_email);
-            this.guna2GradientPanel1.Controls.Add(this.txt_password);
             this.guna2GradientPanel1.Controls.Add(this.txt_lastname);
             this.guna2GradientPanel1.Controls.Add(this.txt_name);
             this.guna2GradientPanel1.Controls.Add(this.btn_save);
@@ -63,7 +60,6 @@
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.label4);
-            this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -72,7 +68,7 @@
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(917, 535);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(912, 463);
             this.guna2GradientPanel1.TabIndex = 23;
             // 
             // btn_cancel
@@ -90,7 +86,7 @@
             this.btn_cancel.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btn_cancel.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_cancel.HoverState.Parent = this.btn_cancel;
-            this.btn_cancel.Location = new System.Drawing.Point(410, 471);
+            this.btn_cancel.Location = new System.Drawing.Point(410, 393);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btn_cancel.ShadowDecoration.Parent = this.btn_cancel;
@@ -115,7 +111,7 @@
             this.txt_username.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_username.HoverState.Parent = this.txt_username;
-            this.txt_username.Location = new System.Drawing.Point(629, 404);
+            this.txt_username.Location = new System.Drawing.Point(629, 326);
             this.txt_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_username.Name = "txt_username";
             this.txt_username.PasswordChar = '\0';
@@ -141,7 +137,7 @@
             this.txt_phone.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_phone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_phone.HoverState.Parent = this.txt_phone;
-            this.txt_phone.Location = new System.Drawing.Point(629, 326);
+            this.txt_phone.Location = new System.Drawing.Point(629, 248);
             this.txt_phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.PasswordChar = '\0';
@@ -167,7 +163,7 @@
             this.txt_email.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_email.HoverState.Parent = this.txt_email;
-            this.txt_email.Location = new System.Drawing.Point(629, 250);
+            this.txt_email.Location = new System.Drawing.Point(629, 172);
             this.txt_email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_email.Name = "txt_email";
             this.txt_email.PasswordChar = '\0';
@@ -176,32 +172,6 @@
             this.txt_email.ShadowDecoration.Parent = this.txt_email;
             this.txt_email.Size = new System.Drawing.Size(260, 43);
             this.txt_email.TabIndex = 25;
-            // 
-            // txt_password
-            // 
-            this.txt_password.BackColor = System.Drawing.Color.Transparent;
-            this.txt_password.BorderRadius = 5;
-            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_password.DefaultText = "";
-            this.txt_password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_password.DisabledState.Parent = this.txt_password;
-            this.txt_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_password.FocusedState.Parent = this.txt_password;
-            this.txt_password.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_password.HoverState.Parent = this.txt_password;
-            this.txt_password.Location = new System.Drawing.Point(629, 174);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
-            this.txt_password.PlaceholderText = "*********";
-            this.txt_password.SelectedText = "";
-            this.txt_password.ShadowDecoration.Parent = this.txt_password;
-            this.txt_password.Size = new System.Drawing.Size(260, 43);
-            this.txt_password.TabIndex = 24;
             // 
             // txt_lastname
             // 
@@ -269,7 +239,7 @@
             this.btn_save.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btn_save.HoverState.ForeColor = System.Drawing.Color.White;
             this.btn_save.HoverState.Parent = this.btn_save;
-            this.btn_save.Location = new System.Drawing.Point(671, 471);
+            this.btn_save.Location = new System.Drawing.Point(671, 393);
             this.btn_save.Name = "btn_save";
             this.btn_save.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_save.ShadowDecoration.Parent = this.btn_save;
@@ -284,7 +254,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(406, 414);
+            this.label6.Location = new System.Drawing.Point(406, 336);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(171, 22);
             this.label6.TabIndex = 15;
@@ -308,7 +278,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(408, 336);
+            this.label5.Location = new System.Drawing.Point(408, 258);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(175, 22);
             this.label5.TabIndex = 14;
@@ -320,23 +290,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(408, 259);
+            this.label4.Location = new System.Drawing.Point(408, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 22);
             this.label4.TabIndex = 13;
             this.label4.Text = "Correo electronico:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(408, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 22);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Contraseña: ";
             // 
             // label2
             // 
@@ -354,9 +312,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::EYN_Store.Properties.Resources.EYN___Ligth_blue_Logo___No_BG;
-            this.pictureBox1.Location = new System.Drawing.Point(-61, -26);
+            this.pictureBox1.Location = new System.Drawing.Point(-12, -35);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 588);
+            this.pictureBox1.Size = new System.Drawing.Size(434, 502);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -365,7 +323,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(917, 535);
+            this.ClientSize = new System.Drawing.Size(912, 463);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditUser";
@@ -386,7 +344,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_username;
         private Guna.UI2.WinForms.Guna2TextBox txt_phone;
         private Guna.UI2.WinForms.Guna2TextBox txt_email;
-        private Guna.UI2.WinForms.Guna2TextBox txt_password;
         private Guna.UI2.WinForms.Guna2TextBox txt_lastname;
         private Guna.UI2.WinForms.Guna2TextBox txt_name;
         private Guna.UI2.WinForms.Guna2Button btn_save;
@@ -394,7 +351,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

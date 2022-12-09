@@ -24,6 +24,7 @@ namespace EYN_Store
             {
                 DB_Connection dB_Connection = new DB_Connection();
                 dB_Connection.SendQueryToDB($"INSERT INTO Users (`U_Name`, `U_LastName`, `U_Password`, `U_Email`, `U_PhoneNumber`, `U_UserName`) VALUES ('{user.Task_Name}','{user.Task_LastName}','{user.Task_Password}','{user.Task_Email}','{user.Task_PhoneNumber}','{user.Task_UserName}');");
+                MessageBox.Show("El usuario se ha agregado correctamente.");
             }
             catch
             {
@@ -36,7 +37,8 @@ namespace EYN_Store
             try
             {
                 DB_Connection dB_Connection = new DB_Connection();
-                dB_Connection.SendQueryToDB($"UPDATE Users SET `U_Name`='{user.Task_Name}', `U_LastName`='{user.Task_LastName}', `U_Password`='{user.Task_Password}', `U_Email`='{user.Task_Email}', `U_PhoneNumber`='{user.Task_PhoneNumber}', `U_UserName`='{user.Task_UserName}';");
+                dB_Connection.SendQueryToDB($"UPDATE Users SET `U_Name`='{user.Task_Name}', `U_LastName`='{user.Task_LastName}', `U_Email`='{user.Task_Email}', `U_PhoneNumber`='{user.Task_PhoneNumber}', `U_UserName`='{user.Task_UserName}' WHERE ID={user.Task_ID};");
+                MessageBox.Show("El usuario se ha actualizado correctamente.");
             }
             catch
             {

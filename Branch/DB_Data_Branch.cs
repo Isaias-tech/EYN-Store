@@ -17,7 +17,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado FROM Branchs WHERE {by} LIKE '%{value}%';");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado` FROM Branchs WHERE {by} LIKE '%{value}%';");
             }
             catch
             {
@@ -31,7 +31,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado FROM Branchs WHERE ID={ID};");
+                return ssh_DB_Connection.SendQueryToDB($"SELECT `ID`,`B_Name` AS `Sucursal`, `B_Description` AS `Descripción`,`B_Direction` AS `Dirección`, `B_Phone` AS `Telefono`,`B_Status` AS `Estado` FROM Branchs WHERE ID={ID};");
             }
             catch
             {

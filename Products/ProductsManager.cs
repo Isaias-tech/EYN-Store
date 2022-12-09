@@ -21,5 +21,42 @@ namespace EYN_Store
         {
             dgv_product.DataSource = new DB_Data_Products().getProducts();
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt = new DB_Data_Position().getPositionBy("P_Name", txt_search.Text);
+                dgv_product.DataSource = dt;
+            }
+            catch
+            {
+                MessageBox.Show("Ubo un error al buscar.", "!Error¡");
+            }
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["AddProduct"] as AddProduct) != null))
+            {
+                using ( AddProduct ab = new AddProduct())
+                {
+                    ab.ShowDialog();
+                }
+                dgv_product.DataSource = new DB_Data_Products().getProducts();
+            }
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["EditProduct"] as EditProduct) != null))
+            {
+                using (EditProduct ab = new EditProduct())
+                {
+                    ab.ShowDialog();
+                }
+                dgv_product.DataSource = new DB_Data_Products().getProducts();
+            }
+        }
     }
 }

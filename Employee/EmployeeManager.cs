@@ -46,16 +46,13 @@ namespace EYN_Store
             }
         }
 
-        private void AddEmployee_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            dgv_employee.DataSource = new DB_Data_Employee().getEmployees();
-        }
-
         private void btn_add_employee_Click(object sender, EventArgs e)
         {
-            AddEmployee ae = new AddEmployee();
-            ae.Show();
-            ae.FormClosing += AddEmployee_FormClosing;
+            using (AddEmployee ae = new AddEmployee())
+            {
+                ae.ShowDialog();
+            }
+            dgv_employee.DataSource = new DB_Data_Employee().getEmployees();
         }
 
         private void btn_details_Click(object sender, EventArgs e)
@@ -63,15 +60,14 @@ namespace EYN_Store
             var cells = dgv_employee.SelectedRows[0].Cells;
             if (Convert.ToString(cells[0].Value).Length > 0)
             {
-                Employee u = new Employee(Convert.ToInt32(cells[1].Value), Convert.ToString(cells[3].Value), cells[4].Value.ToString(), Convert.ToInt32(cells[5].Value), Convert.ToInt32(cells[6].Value));
-                Program.selectedEmployee = u;
-                SueldoNeto_Empleado sne = new SueldoNeto_Empleado();
-                sne.Show();
+                if (!((Application.OpenForms["SueldoNeto_Empleado"] as SueldoNeto_Empleado) != null))
+                {
+                    Employee u = new Employee(Convert.ToInt32(cells[1].Value), Convert.ToString(cells[3].Value), cells[4].Value.ToString(), Convert.ToInt32(cells[5].Value), Convert.ToInt32(cells[6].Value));
+                    Program.selectedEmployee = u;
+                    SueldoNeto_Empleado sne = new SueldoNeto_Empleado();
+                    sne.Show();
+                }
             }
-        }
-        private void EditEmployee_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            dgv_employee.DataSource = new DB_Data_Employee().getEmployees();
         }
     }
 }

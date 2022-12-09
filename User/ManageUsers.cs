@@ -22,16 +22,16 @@ namespace EYN_Store
             dgv_data.DataSource = new DB_Data_Users().GetUsers();
         }
 
-        private void Sign_Up_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            dgv_data.DataSource = new DB_Data_Users().GetUsers();
-        }
-
         private void btn_add_user_Click(object sender, EventArgs e)
         {
-            Sign_Up sign_Up = new Sign_Up();
-            sign_Up.Show();
-            sign_Up.FormClosing += Sign_Up_FormClosing;
+            if (!((Application.OpenForms["Sign_Up"] as Sign_Up) != null))
+            {
+                using (Sign_Up sign_Up = new Sign_Up())
+                {
+                    sign_Up.ShowDialog();
+                }
+                dgv_data.DataSource = new DB_Data_Users().GetUsers();
+            }
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -47,19 +47,19 @@ namespace EYN_Store
             }
         }
 
-        private void EditUser_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            dgv_data.DataSource = new DB_Data_Users().GetUsers();
-        }
-
         private void btn_edit_Click(object sender, EventArgs e)
         {
             if (dgv_data.SelectedRows.Count == 1)
             {
                 var cells = dgv_data.SelectedRows[0].Cells;
-                EditUser eu = new EditUser(Convert.ToString(cells[0].Value), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[3].Value), Convert.ToString(cells[4].Value), Convert.ToString(cells[5].Value));
-                eu.Show();
-                eu.FormClosing += EditUser_FormClosing;
+                if (!((Application.OpenForms["EditUser"] as EditUser) != null))
+                {
+                    using(EditUser eu = new EditUser(Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[3].Value), Convert.ToString(cells[4].Value), Convert.ToString(cells[5].Value), Convert.ToInt32(cells[0].Value)))
+                    {
+                        eu.ShowDialog();
+                    }
+                    dgv_data.DataSource = new DB_Data_Users().GetUsers();
+                }
             }
             else
             {

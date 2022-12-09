@@ -1,6 +1,6 @@
 ﻿namespace EYN_Store
 {
-    partial class ClientInvoice
+    partial class InvoiceDetails
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientInvoice));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InvoiceDetails));
             this.SuspendLayout();
             // 
             // ClientInvoice

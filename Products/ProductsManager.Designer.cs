@@ -34,8 +34,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductsManager));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_add = new Guna.UI2.WinForms.Guna2Button();
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,66 +65,103 @@
             // 
             // guna2GradientPanel5
             // 
-            this.guna2GradientPanel5.Controls.Add(this.guna2TextBox1);
+            this.guna2GradientPanel5.Controls.Add(this.txt_search);
             this.guna2GradientPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel5.Location = new System.Drawing.Point(163, 0);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(1299, 38);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(1234, 38);
             this.guna2GradientPanel5.TabIndex = 4;
             // 
-            // guna2TextBox1
+            // txt_search
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(1299, 38);
-            this.guna2TextBox1.TabIndex = 0;
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.Parent = this.txt_search;
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.FocusedState.Parent = this.txt_search;
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.HoverState.Parent = this.txt_search;
+            this.txt_search.Location = new System.Drawing.Point(0, 0);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "";
+            this.txt_search.SelectedText = "";
+            this.txt_search.ShadowDecoration.Parent = this.txt_search;
+            this.txt_search.Size = new System.Drawing.Size(1234, 38);
+            this.txt_search.TabIndex = 0;
             // 
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.White;
+            this.guna2GradientPanel4.Controls.Add(this.btn_edit);
+            this.guna2GradientPanel4.Controls.Add(this.btn_add);
             this.guna2GradientPanel4.Controls.Add(this.btn_search);
             this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(1462, 0);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(1397, 0);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.Parent = this.guna2GradientPanel4;
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(163, 38);
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(228, 38);
             this.guna2GradientPanel4.TabIndex = 3;
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_edit.BorderRadius = 5;
+            this.btn_edit.BorderThickness = 2;
+            this.btn_edit.CheckedState.Parent = this.btn_edit;
+            this.btn_edit.CustomImages.Parent = this.btn_edit;
+            this.btn_edit.FillColor = System.Drawing.Color.Transparent;
+            this.btn_edit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_edit.HoverState.Parent = this.btn_edit;
+            this.btn_edit.Location = new System.Drawing.Point(141, 4);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.ShadowDecoration.Parent = this.btn_edit;
+            this.btn_edit.Size = new System.Drawing.Size(82, 31);
+            this.btn_edit.TabIndex = 7;
+            this.btn_edit.Text = "Editar";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_add
+            // 
+            this.btn_add.BorderColor = System.Drawing.Color.Lime;
+            this.btn_add.BorderRadius = 5;
+            this.btn_add.BorderThickness = 2;
+            this.btn_add.CheckedState.Parent = this.btn_add;
+            this.btn_add.CustomImages.Parent = this.btn_add;
+            this.btn_add.FillColor = System.Drawing.Color.Transparent;
+            this.btn_add.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.Lime;
+            this.btn_add.HoverState.Parent = this.btn_add;
+            this.btn_add.Location = new System.Drawing.Point(98, 5);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.ShadowDecoration.Parent = this.btn_add;
+            this.btn_add.Size = new System.Drawing.Size(33, 29);
+            this.btn_add.TabIndex = 6;
+            this.btn_add.Text = "+";
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
             // btn_search
             // 
-            this.btn_search.BackColor = System.Drawing.Color.Transparent;
             this.btn_search.BorderRadius = 5;
             this.btn_search.CheckedState.Parent = this.btn_search;
             this.btn_search.CustomImages.Parent = this.btn_search;
-            this.btn_search.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_search.ForeColor = System.Drawing.Color.White;
             this.btn_search.HoverState.Parent = this.btn_search;
-            this.btn_search.Location = new System.Drawing.Point(0, 0);
+            this.btn_search.Location = new System.Drawing.Point(6, 4);
             this.btn_search.Name = "btn_search";
-            this.btn_search.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_search.ShadowDecoration.Parent = this.btn_search;
-            this.btn_search.Size = new System.Drawing.Size(163, 38);
-            this.btn_search.TabIndex = 1;
+            this.btn_search.Size = new System.Drawing.Size(82, 31);
+            this.btn_search.TabIndex = 5;
             this.btn_search.Text = "Buscar";
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // guna2GradientPanel3
             // 
@@ -242,12 +281,14 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel4;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2Button btn_search;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_product;
+        private Guna.UI2.WinForms.Guna2Button btn_edit;
+        private Guna.UI2.WinForms.Guna2Button btn_add;
+        private Guna.UI2.WinForms.Guna2Button btn_search;
     }
 }

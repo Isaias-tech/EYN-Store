@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EYN_Store
 {
-    public partial class ClientInvoice : Form
+    public partial class InvoiceDetails : Form
     {
-        public ClientInvoice()
+        public InvoiceDetails()
         {
             InitializeComponent();
         }

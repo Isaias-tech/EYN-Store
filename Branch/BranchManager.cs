@@ -21,5 +21,42 @@ namespace EYN_Store
         {
             dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt = new DB_Data_Branch().getBranchBy("B_Name", txt_search.Text);
+                dgv_branch.DataSource = dt;
+            }
+            catch
+            {
+                MessageBox.Show("Ubo un error al buscar.", "!Error¡");
+            }
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["AddBranch"] as AddBranch) != null))
+            {
+                using (AddBranch ab = new AddBranch())
+                {
+                    ab.ShowDialog();
+                }
+                dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
+            }
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["EditBranch"] as EditBranch) != null))
+            {
+                using (EditBranch eb = new EditBranch())
+                {
+                    eb.ShowDialog();
+                }
+                dgv_branch.DataSource = new DB_Data_Branch().getBranchs();
+            }
+        }
     }
 }

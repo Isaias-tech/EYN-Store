@@ -21,5 +21,30 @@ namespace EYN_Store
         {
             dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt = new DB_Data_Invoice().getInvoiceBy("Users.U_UserName", txt_search.Text);
+                dgv_invoice.DataSource = dt;
+            }
+            catch
+            {
+                MessageBox.Show("Ubo un error al buscar.", "!Error¡");
+            }
+        }
+
+        private void btn_details_Click(object sender, EventArgs e)
+        {
+            if (!((Application.OpenForms["InvoiceDetails"] as InvoiceDetails) != null))
+            {
+                using (InvoiceDetails invoiceDetails = new InvoiceDetails())
+                {
+                    invoiceDetails.ShowDialog();
+                }
+                dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
+            }
+        }
     }
 }
