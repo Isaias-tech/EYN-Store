@@ -21,7 +21,7 @@ namespace EYN_Store
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener la posición.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener la facturas.");
             }
             return new DataTable();
         }
@@ -35,7 +35,7 @@ namespace EYN_Store
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener la posición.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener la facturas.");
             }
             return new DataTable();
         }
@@ -49,14 +49,32 @@ namespace EYN_Store
             }
             catch
             {
-                MessageBox.Show("Ha ocurrido un error al intentar obtener las posiciones.");
+                MessageBox.Show("Ha ocurrido un error al intentar obtener las facturas.");
             }
             return new DataTable();
         }
 
-        public DataTable addInvoice(Employee employee)
+        public void addInvoice(Invoice invoice)
         {
-            return new DataTable();
+            try
+            {
+
+                DB_Connection ssh_DB_Connection = new DB_Connection();
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Invoices (ID_Employee, ID_Branch, I_Total_Price, I_Payment_Method, ID_Product) VALUES ('{invoice.I_ID_Employee}', '{invoice.I_ID_Branch}', '{invoice.I_Total_Price}','{invoice.I_PaymentM_Method}', '{invoice.I_ID_Product}');");
+                string values = "";
+                using (DataTable dt = ssh_DB_Connection.SendQueryToDB($"SELECT * FROM Invoices ORDER BY ID DESC LIMIT 1"))
+                {
+                    for (int i = 0; i < Program.cart.Count; i++)
+                    {
+                        values += $"({Program.cart[i]}, {dt.Rows[0]["ID"]})" + (Program.cart.Count-1 == i ? "" : ", ");
+                    }
+                }
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Product_Invoice (ID_Product, ID_Invoice) VALUES {values}");
+            }
+            catch
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar generar la factura.");
+            }
         }
 
         public DataTable updateInvoice(string id, Employee employee)

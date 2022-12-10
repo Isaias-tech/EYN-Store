@@ -62,7 +62,7 @@ namespace EYN_Store
                 string wheres = "";
                 for (int i = 0; i < Program.cart.Count; i++)
                 {
-                    wheres+= $"'{Program.cart[i].ToString()}'" + (Program.cart.Count == i ? "" : ",");
+                    wheres+= $"'{Program.cart[i].ToString()}'" + (Program.cart.Count != i ? "" : ",");
                 }
                 DB_Connection ssh_DB_Connection = new DB_Connection();
                 return ssh_DB_Connection.SendQueryToDB($"SELECT Products.ID, Products.P_Name AS `Nombre`, Products.P_Description AS `Descripción`, ProductTypes.PT_Name AS `Tipo de producto`, Providers.P_Name AS `Proveedor`, Branchs.B_Name AS `Sucursal`, Products.P_Cost AS `Costo de compra`, Products.P_Price AS `Precio de venta`, Products.P_Expiration_Date AS `Fecha de vencimiento`, Products.P_Status AS `Estado` FROM Products JOIN ProductTypes ON Products.ID_Type = ProductTypes.ID JOIN Providers ON Products.ID_Type = Providers.ID JOIN Branchs ON Products.ID_Branch = Branchs.ID" + (Program.cart.Count > 0 ? $" WHERE Products.ID IN ({wheres});" : " WHERE Products.ID=0;"));
