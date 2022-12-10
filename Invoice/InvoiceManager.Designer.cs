@@ -36,7 +36,6 @@
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btn_details = new Guna.UI2.WinForms.Guna2Button();
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,7 +68,7 @@
             this.guna2GradientPanel5.Location = new System.Drawing.Point(99, 0);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(619, 37);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(706, 37);
             this.guna2GradientPanel5.TabIndex = 4;
             // 
             // txt_search
@@ -92,38 +91,19 @@
             this.txt_search.PlaceholderText = "";
             this.txt_search.SelectedText = "";
             this.txt_search.ShadowDecoration.Parent = this.txt_search;
-            this.txt_search.Size = new System.Drawing.Size(619, 37);
+            this.txt_search.Size = new System.Drawing.Size(706, 37);
             this.txt_search.TabIndex = 1;
             // 
             // guna2GradientPanel4
             // 
-            this.guna2GradientPanel4.Controls.Add(this.btn_details);
+            this.guna2GradientPanel4.BackColor = System.Drawing.Color.White;
             this.guna2GradientPanel4.Controls.Add(this.btn_search);
             this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(718, 0);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(805, 0);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.Parent = this.guna2GradientPanel4;
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(183, 37);
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(96, 37);
             this.guna2GradientPanel4.TabIndex = 3;
-            // 
-            // btn_details
-            // 
-            this.btn_details.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_details.BorderRadius = 5;
-            this.btn_details.BorderThickness = 2;
-            this.btn_details.CheckedState.Parent = this.btn_details;
-            this.btn_details.CustomImages.Parent = this.btn_details;
-            this.btn_details.FillColor = System.Drawing.Color.Transparent;
-            this.btn_details.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_details.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_details.HoverState.Parent = this.btn_details;
-            this.btn_details.Location = new System.Drawing.Point(94, 3);
-            this.btn_details.Name = "btn_details";
-            this.btn_details.ShadowDecoration.Parent = this.btn_details;
-            this.btn_details.Size = new System.Drawing.Size(82, 31);
-            this.btn_details.TabIndex = 3;
-            this.btn_details.Text = "Detalles";
-            this.btn_details.Click += new System.EventHandler(this.btn_details_Click);
             // 
             // btn_search
             // 
@@ -268,7 +248,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_invoice;
         private Guna.UI2.WinForms.Guna2Button btn_search;
-        private Guna.UI2.WinForms.Guna2Button btn_details;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
     }

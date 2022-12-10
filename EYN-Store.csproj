@@ -181,12 +181,6 @@
     <Compile Include="Invoice\GenerateInvoice.Designer.cs">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="Invoice\InvoiceDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Invoice\InvoiceDetails.Designer.cs">
-      <DependentUpon>InvoiceDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="Invoice\Invoice.cs" />
     <Compile Include="Invoice\InvoiceManager.cs">
       <SubType>Form</SubType>
@@ -304,9 +298,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice\GenerateInvoice.resx">
       <DependentUpon>GenerateInvoice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Invoice\InvoiceDetails.resx">
-      <DependentUpon>InvoiceDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Invoice\InvoiceManager.resx">
       <DependentUpon>InvoiceManager.cs</DependentUpon>

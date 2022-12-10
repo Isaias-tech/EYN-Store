@@ -38,14 +38,6 @@ namespace EYN_Store
 
         private void btn_details_Click(object sender, EventArgs e)
         {
-            if (!((Application.OpenForms["InvoiceDetails"] as InvoiceDetails) != null))
-            {
-                using (InvoiceDetails invoiceDetails = new InvoiceDetails())
-                {
-                    invoiceDetails.ShowDialog();
-                }
-                dgv_invoice.DataSource = new DB_Data_Invoice().getInvoices();
-            }
         }
 
         private void dgv_invoice_MouseClick(object sender, MouseEventArgs e)
