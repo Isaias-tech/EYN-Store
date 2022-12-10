@@ -29,5 +29,13 @@ namespace EYN_Store
         {
             dgv_products.DataSource = new DB_Data_Products().getClientProductBy("P_Name", txt_search.Text, cmb_type.SelectedValue.ToString());
         }
+
+        private void btn_add_to_cart_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgv_products.SelectedRows)
+            {
+                Program.cart.Add(Convert.ToInt32(row.Cells[0].Value));
+            }
+        }
     }
 }

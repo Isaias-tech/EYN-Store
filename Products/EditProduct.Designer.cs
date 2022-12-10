@@ -36,7 +36,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dtp_expiration_date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txt_price = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_cost = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_description = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,19 +47,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_date = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.Controls.Add(this.txt_date);
             this.guna2GradientPanel1.Controls.Add(this.cmb_branch);
             this.guna2GradientPanel1.Controls.Add(this.cmb_provider);
             this.guna2GradientPanel1.Controls.Add(this.cmb_type);
             this.guna2GradientPanel1.Controls.Add(this.label8);
             this.guna2GradientPanel1.Controls.Add(this.label7);
             this.guna2GradientPanel1.Controls.Add(this.label6);
-            this.guna2GradientPanel1.Controls.Add(this.dtp_expiration_date);
             this.guna2GradientPanel1.Controls.Add(this.txt_price);
             this.guna2GradientPanel1.Controls.Add(this.txt_cost);
             this.guna2GradientPanel1.Controls.Add(this.txt_description);
@@ -176,24 +176,6 @@
             this.label6.Size = new System.Drawing.Size(155, 22);
             this.label6.TabIndex = 27;
             this.label6.Text = "Tipo de producto:";
-            // 
-            // dtp_expiration_date
-            // 
-            this.dtp_expiration_date.BackColor = System.Drawing.Color.Transparent;
-            this.dtp_expiration_date.BorderRadius = 5;
-            this.dtp_expiration_date.CheckedState.Parent = this.dtp_expiration_date;
-            this.dtp_expiration_date.FillColor = System.Drawing.Color.White;
-            this.dtp_expiration_date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_expiration_date.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtp_expiration_date.HoverState.Parent = this.dtp_expiration_date;
-            this.dtp_expiration_date.Location = new System.Drawing.Point(629, 412);
-            this.dtp_expiration_date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_expiration_date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_expiration_date.Name = "dtp_expiration_date";
-            this.dtp_expiration_date.ShadowDecoration.Parent = this.dtp_expiration_date;
-            this.dtp_expiration_date.Size = new System.Drawing.Size(260, 44);
-            this.dtp_expiration_date.TabIndex = 26;
-            this.dtp_expiration_date.Value = new System.DateTime(2022, 12, 9, 2, 39, 14, 326);
             // 
             // txt_price
             // 
@@ -393,6 +375,32 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // txt_date
+            // 
+            this.txt_date.BackColor = System.Drawing.Color.Transparent;
+            this.txt_date.BorderRadius = 5;
+            this.txt_date.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_date.DefaultText = "";
+            this.txt_date.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_date.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_date.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_date.DisabledState.Parent = this.txt_date;
+            this.txt_date.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_date.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_date.FocusedState.Parent = this.txt_date;
+            this.txt_date.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_date.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_date.HoverState.Parent = this.txt_date;
+            this.txt_date.Location = new System.Drawing.Point(629, 410);
+            this.txt_date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_date.Name = "txt_date";
+            this.txt_date.PasswordChar = '\0';
+            this.txt_date.PlaceholderText = "Fecha";
+            this.txt_date.SelectedText = "";
+            this.txt_date.ShadowDecoration.Parent = this.txt_date;
+            this.txt_date.Size = new System.Drawing.Size(260, 43);
+            this.txt_date.TabIndex = 33;
+            // 
             // EditProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -421,7 +429,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtp_expiration_date;
         private Guna.UI2.WinForms.Guna2TextBox txt_price;
         private Guna.UI2.WinForms.Guna2TextBox txt_cost;
         private Guna.UI2.WinForms.Guna2TextBox txt_description;
@@ -433,5 +440,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_date;
     }
 }

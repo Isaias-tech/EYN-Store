@@ -13,6 +13,7 @@ namespace EYN_Store
         public static User CurrentUser;
         public static DataTable data;
         public static Employee selectedEmployee;
+        public static List<int> cart = new List<int>();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

@@ -16,5 +16,10 @@ namespace EYN_Store
         {
             InitializeComponent();
         }
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+            dgv_cart.DataSource = new DB_Data_Products().getProductsMultipleWhere();
+        }
     }
 }

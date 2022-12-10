@@ -51,7 +51,8 @@ namespace EYN_Store
         {
             if (!((Application.OpenForms["EditProduct"] as EditProduct) != null))
             {
-                using (EditProduct ab = new EditProduct())
+                var cells = dgv_product.SelectedRows[0].Cells;
+                using (EditProduct ab = new EditProduct(Convert.ToString(cells[0].Value), Convert.ToString(cells[1].Value), Convert.ToString(cells[2].Value), Convert.ToString(cells[6].Value), Convert.ToString(cells[7].Value), Convert.ToString(cells[3].Value), Convert.ToString(cells[4].Value), Convert.ToString(cells[5].Value), Convert.ToString(cells[8].Value)))
                 {
                     ab.ShowDialog();
                 }

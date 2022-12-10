@@ -34,15 +34,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientProducts));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmb_type = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dgv_products = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btn_search = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cmb_type = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btn_add_to_cart = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel5.SuspendLayout();
             this.guna2GradientPanel4.SuspendLayout();
@@ -71,21 +72,90 @@
             this.guna2GradientPanel5.Location = new System.Drawing.Point(90, 0);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(1167, 53);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(1012, 53);
             this.guna2GradientPanel5.TabIndex = 3;
+            // 
+            // txt_search
+            // 
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.Parent = this.txt_search;
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.FocusedState.Parent = this.txt_search;
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.HoverState.Parent = this.txt_search;
+            this.txt_search.Location = new System.Drawing.Point(0, 0);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "";
+            this.txt_search.SelectedText = "";
+            this.txt_search.ShadowDecoration.Parent = this.txt_search;
+            this.txt_search.Size = new System.Drawing.Size(1012, 53);
+            this.txt_search.TabIndex = 4;
             // 
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BackColor = System.Drawing.Color.White;
+            this.guna2GradientPanel4.Controls.Add(this.btn_add_to_cart);
             this.guna2GradientPanel4.Controls.Add(this.label2);
             this.guna2GradientPanel4.Controls.Add(this.cmb_type);
             this.guna2GradientPanel4.Controls.Add(this.btn_search);
             this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(1257, 0);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(1102, 0);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.ShadowDecoration.Parent = this.guna2GradientPanel4;
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(337, 53);
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(492, 53);
             this.guna2GradientPanel4.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 22);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Tipo:";
+            // 
+            // cmb_type
+            // 
+            this.cmb_type.BackColor = System.Drawing.Color.Transparent;
+            this.cmb_type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_type.FocusedColor = System.Drawing.Color.Empty;
+            this.cmb_type.FocusedState.Parent = this.cmb_type;
+            this.cmb_type.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmb_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmb_type.FormattingEnabled = true;
+            this.cmb_type.HoverState.Parent = this.cmb_type;
+            this.cmb_type.ItemHeight = 30;
+            this.cmb_type.ItemsAppearance.Parent = this.cmb_type;
+            this.cmb_type.Location = new System.Drawing.Point(61, 9);
+            this.cmb_type.Name = "cmb_type";
+            this.cmb_type.ShadowDecoration.Parent = this.cmb_type;
+            this.cmb_type.Size = new System.Drawing.Size(175, 36);
+            this.cmb_type.TabIndex = 8;
+            // 
+            // btn_search
+            // 
+            this.btn_search.BorderRadius = 5;
+            this.btn_search.CheckedState.Parent = this.btn_search;
+            this.btn_search.CustomImages.Parent = this.btn_search;
+            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.ForeColor = System.Drawing.Color.White;
+            this.btn_search.HoverState.Parent = this.btn_search;
+            this.btn_search.Location = new System.Drawing.Point(246, 11);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.ShadowDecoration.Parent = this.btn_search;
+            this.btn_search.Size = new System.Drawing.Size(82, 31);
+            this.btn_search.TabIndex = 7;
+            this.btn_search.Text = "Buscar";
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // guna2GradientPanel3
             // 
@@ -97,6 +167,16 @@
             this.guna2GradientPanel3.ShadowDecoration.Parent = this.guna2GradientPanel3;
             this.guna2GradientPanel3.Size = new System.Drawing.Size(90, 53);
             this.guna2GradientPanel3.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 22);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Buscar:";
             // 
             // guna2GradientPanel2
             // 
@@ -110,6 +190,8 @@
             // 
             // dgv_products
             // 
+            this.dgv_products.AllowUserToAddRows = false;
+            this.dgv_products.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgv_products.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_products.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -140,6 +222,7 @@
             this.dgv_products.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_products.Location = new System.Drawing.Point(0, 0);
             this.dgv_products.Name = "dgv_products";
+            this.dgv_products.ReadOnly = true;
             this.dgv_products.RowHeadersVisible = false;
             this.dgv_products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_products.Size = new System.Drawing.Size(1594, 397);
@@ -158,7 +241,7 @@
             this.dgv_products.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgv_products.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_products.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgv_products.ThemeStyle.ReadOnly = false;
+            this.dgv_products.ThemeStyle.ReadOnly = true;
             this.dgv_products.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_products.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_products.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -167,83 +250,22 @@
             this.dgv_products.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_products.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // btn_search
+            // btn_add_to_cart
             // 
-            this.btn_search.BorderRadius = 5;
-            this.btn_search.CheckedState.Parent = this.btn_search;
-            this.btn_search.CustomImages.Parent = this.btn_search;
-            this.btn_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_search.ForeColor = System.Drawing.Color.White;
-            this.btn_search.HoverState.Parent = this.btn_search;
-            this.btn_search.Location = new System.Drawing.Point(246, 11);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.ShadowDecoration.Parent = this.btn_search;
-            this.btn_search.Size = new System.Drawing.Size(82, 31);
-            this.btn_search.TabIndex = 7;
-            this.btn_search.Text = "Buscar";
-            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 22);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Buscar:";
-            // 
-            // txt_search
-            // 
-            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_search.DefaultText = "";
-            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_search.DisabledState.Parent = this.txt_search;
-            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_search.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_search.FocusedState.Parent = this.txt_search;
-            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_search.HoverState.Parent = this.txt_search;
-            this.txt_search.Location = new System.Drawing.Point(0, 0);
-            this.txt_search.Name = "txt_search";
-            this.txt_search.PasswordChar = '\0';
-            this.txt_search.PlaceholderText = "";
-            this.txt_search.SelectedText = "";
-            this.txt_search.ShadowDecoration.Parent = this.txt_search;
-            this.txt_search.Size = new System.Drawing.Size(1167, 53);
-            this.txt_search.TabIndex = 4;
-            // 
-            // cmb_type
-            // 
-            this.cmb_type.BackColor = System.Drawing.Color.Transparent;
-            this.cmb_type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmb_type.FocusedColor = System.Drawing.Color.Empty;
-            this.cmb_type.FocusedState.Parent = this.cmb_type;
-            this.cmb_type.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmb_type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmb_type.FormattingEnabled = true;
-            this.cmb_type.HoverState.Parent = this.cmb_type;
-            this.cmb_type.ItemHeight = 30;
-            this.cmb_type.ItemsAppearance.Parent = this.cmb_type;
-            this.cmb_type.Location = new System.Drawing.Point(61, 9);
-            this.cmb_type.Name = "cmb_type";
-            this.cmb_type.ShadowDecoration.Parent = this.cmb_type;
-            this.cmb_type.Size = new System.Drawing.Size(175, 36);
-            this.cmb_type.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 22);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Tipo:";
+            this.btn_add_to_cart.BorderRadius = 5;
+            this.btn_add_to_cart.CheckedState.Parent = this.btn_add_to_cart;
+            this.btn_add_to_cart.CustomImages.Parent = this.btn_add_to_cart;
+            this.btn_add_to_cart.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_add_to_cart.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_to_cart.ForeColor = System.Drawing.Color.White;
+            this.btn_add_to_cart.HoverState.Parent = this.btn_add_to_cart;
+            this.btn_add_to_cart.Location = new System.Drawing.Point(334, 11);
+            this.btn_add_to_cart.Name = "btn_add_to_cart";
+            this.btn_add_to_cart.ShadowDecoration.Parent = this.btn_add_to_cart;
+            this.btn_add_to_cart.Size = new System.Drawing.Size(150, 31);
+            this.btn_add_to_cart.TabIndex = 10;
+            this.btn_add_to_cart.Text = "Agregar al carrito";
+            this.btn_add_to_cart.Click += new System.EventHandler(this.btn_add_to_cart_Click);
             // 
             // ClientProducts
             // 
@@ -282,5 +304,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2ComboBox cmb_type;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button btn_add_to_cart;
     }
 }
