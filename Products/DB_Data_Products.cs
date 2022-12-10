@@ -59,7 +59,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Products (P_Name, P_Description, ID_Type, ID_Provider, ID_Branch, P_Cost, P_Price, P_Expiration_Date) VALUES ('{product.P_Name}', '{product.P_Description}', {product.P_ID_Type}, {product.P_ID_Provider}, {product.P_ID_Branch}, {product.P_Cost}, {product.P_Price}, {product.P_ExpirationDate});");
+                ssh_DB_Connection.SendQueryToDB($"INSERT INTO Products (P_Name, P_Description, ID_Type, ID_Provider, ID_Branch, P_Cost, P_Price, P_Expiration_Date) VALUES ('{product.P_Name}', '{product.P_Description}', {product.P_ID_Type}, {product.P_ID_Provider}, {product.P_ID_Branch}, {product.P_Cost}, {product.P_Price}, \"{product.P_ExpirationDate}\");");
                 MessageBox.Show("El producto ha sido agregado correctamente.");
             }
             catch
@@ -73,7 +73,7 @@ namespace EYN_Store
             try
             {
                 DB_Connection ssh_DB_Connection = new DB_Connection();
-                ssh_DB_Connection.SendQueryToDB($"UPDATE Products SET P_Name='{product.P_Name}', P_Description='{product.P_Description}', ID_Type={product.P_ID_Type}, ID_Provider={product.P_ID_Provider}, ID_Branch={product.P_ID_Branch}, P_Cost={product.P_Cost}, P_Price={product.P_Price}, P_Expiration_Date='{product.P_ExpirationDate}' WHERE ID={id};");
+                ssh_DB_Connection.SendQueryToDB($"UPDATE Products SET P_Name='{product.P_Name}', P_Description='{product.P_Description}', ID_Type={product.P_ID_Type}, ID_Provider={product.P_ID_Provider}, ID_Branch={product.P_ID_Branch}, P_Cost={product.P_Cost}, P_Price={product.P_Price}, P_Expiration_Date=\"{product.P_ExpirationDate}\" WHERE ID={id};");
                 MessageBox.Show("El producto ha sido actualizado correctamente.");
             }
             catch

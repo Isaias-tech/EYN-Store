@@ -35,7 +35,7 @@ namespace EYN_Store
         {
             if (txt_name.Text.Length > 0 && txt_description.Text.Length > 0 && txt_cost.Text.Length > 0 && txt_price.Text.Length > 0)
             {
-                new DB_Data_Products().addProduct(new Products(txt_name.Text, txt_description.Text, Convert.ToInt32(cmb_type.SelectedValue), Convert.ToInt32(cmb_provider), Convert.ToInt32(cmb_branch),Convert.ToDouble(txt_cost.Text), Convert.ToDouble(txt_price.Text), dtp_expiration_date.Text));
+                new DB_Data_Products().addProduct(new Products(txt_name.Text, txt_description.Text, Convert.ToInt32(cmb_type.SelectedValue.ToString()), Convert.ToInt32(cmb_provider.SelectedValue.ToString()), Convert.ToInt32(cmb_branch.SelectedValue.ToString()),Convert.ToDouble(txt_cost.Text), Convert.ToDouble(txt_price.Text), dtp_expiration_date.Value.ToString()));
                 this.Close();
             }
             else
