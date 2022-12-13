@@ -9,6 +9,7 @@ using Renci;
 using Renci.SshNet;
 using System.Windows.Forms;
 using System.Data;
+using MySqlX.XDevAPI;
 
 namespace EYN_Store
 {
@@ -29,7 +30,7 @@ namespace EYN_Store
         {
             try
             {
-                using(var client = new SshClient(host, username, password))
+                using (var client = new SshClient(host, username, password))
                 {
                     client.Connect();
                     if (client.IsConnected)
