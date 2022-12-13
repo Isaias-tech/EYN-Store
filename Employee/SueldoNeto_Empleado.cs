@@ -38,24 +38,45 @@ namespace EYN_Store
             if (salary >= 34334 && salary < 50000)
             {
                 TOTAL = AFP + ARS + Cooperativa + 0.15;
+                //muestra impuestos separados
+                txt_ars.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * ARS);
+                txt_cope.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * Cooperativa);
+                txt_afp.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * AFP);
+                txt_isr.Text= Convert.ToString(Convert.ToDouble(txt_salary.Text) * 0.15);
+
                 totalimpuesto = (Convert.ToDouble(txt_salary.Text) * TOTAL);
+
                 txt_salary_neto.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) - totalimpuesto);
             }
             else if (salary >= 51000 && salary < 100000)
             {
                 TOTAL = AFP + ARS + Cooperativa + 0.20;
+                //muestra impuestos separados
+                txt_ars.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * ARS);
+                txt_cope.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * Cooperativa);
+                txt_afp.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * AFP);
+                txt_isr.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * 0.20);
                 totalimpuesto = (salary * TOTAL);
                 txt_salary_neto.Text = Convert.ToString(salary - totalimpuesto);
             }
             else if (salary > 100000)
             {
                 TOTAL = AFP + ARS + Cooperativa + 0.25;
+                //muestra impuestos separados
+                txt_ars.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * ARS);
+                txt_cope.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * Cooperativa);
+                txt_afp.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * AFP);
+                txt_isr.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * 0.25);
                 totalimpuesto = (salary * TOTAL);
                 txt_salary_neto.Text = Convert.ToString(salary - totalimpuesto);
             }
             else
             {
                 TOTAL = AFP + ARS + Cooperativa;
+                //muestra impuestos separados
+                txt_ars.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * ARS);
+                txt_cope.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * Cooperativa);
+                txt_afp.Text = Convert.ToString(Convert.ToDouble(txt_salary.Text) * AFP);
                 totalimpuesto = (salary * TOTAL);
                 txt_salary_neto.Text = Convert.ToString(salary - totalimpuesto);
             }
